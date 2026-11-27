@@ -93,7 +93,7 @@ func _physics_process(delta) :
 			_apply_acceleratation(direction,AIR_SPEED_CAP,AIR_ACCELERATION,delta)
 		velocity += get_gravity() * delta
 		move_and_slide()
-		
+		_handle_interact(delta)
 
 		if $%RayCast3D.is_colliding():
 			var target = ray.get_collider()
@@ -142,19 +142,62 @@ func _apply_friction(delta: float) -> void:
 
 var inventory: Array[String] = []
 @onready var ray: RayCast3D = %RayCast3D
+const HOLD_TIME = 5.0 
+var hold_progress = 0.0
+var hold_target = null         
+var hold_locked = false   
 
-func _unhandled_key_input(event: InputEvent) -> void:
-	if ray.is_colliding():
-		var target = ray.get_collider()
-		if not target.has_method("interaction"):
-			target = target.get_parent()
-		if target.has_method("interaction"):
-			$Label.show()
-			if event.is_action_pressed("interact"):
-				target.interaction(self)
-				
+func _get_item() -> Node:
+	if not ray.is_colliding():
+		return null
+	var target = ray.get_collider()
+	if not is_instance_valid(target):
+		return null
+	if target.has_method("interaction"):
+		return target
+	if target.get_parent().has_method("interaction"):
+		return target.get_parent()
+	return null
+
+
+func _handle_interact(delta: float) -> void:
+	var target = _get_item()
+	if target == null or target.get_prompt(self) == "":
+		$Label.hide()
+		hold_progress = 0.0
+		hold_target = null
+		return
+
+	$Label.show()
+	$Label.text = target.get_prompt(self)
+
+	#missing item, already used or E not held, reset
+	if not target.can_interact(self) or not Input.is_action_pressed("interact"):
+		hold_progress = 0.0
+		if not Input.is_action_pressed("interact"):
+			hold_locked = false
+		return
+	if hold_locked:
+		return
+
+	if target != hold_target:
+		hold_progress = 0.0
+		hold_target = target
+
+	hold_progress += delta
+	$Label.text += "  %.1f" % max(HOLD_TIME - hold_progress, 0.0)
+
+	if hold_progress >= HOLD_TIME:
+		target.interaction(self)
+		hold_progress = 0.0
+		hold_target = null
+		hold_locked = true
+
+
 func hide_label():
 	$Label.hide()
+
+
 
 func pick_up_item(item_name: String):
 	inventory.append(item_name)

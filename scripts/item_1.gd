@@ -13,6 +13,12 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+func can_interact(player) -> bool:
+	return true
+
+func get_prompt(player) -> String:
+	return "Hold E to pick up " + item_name
+
 func interaction(player: Node):
 	player.pick_up_item(item_name)
 	player.hide_label()

@@ -60,3 +60,11 @@ offset_right = 1333.0
 offset_bottom = 784.0
 text = "Press E to pick up"
 label_settings = SubResource("LabelSettings_lqyn0")
+
+[node name="Pickup-timer" type="Timer" parent="." unique_id=1031955439]
+wait_time = 5.0
+one_shot = true
+
+[node name="DropOff_timer" type="Timer" parent="." unique_id=1331557782]
+wait_time = 10.0
+one_shot = true
