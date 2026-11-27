@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://dqkj3plh0n38o"]
+
+[ext_resource type="Texture2D" uid="uid://cawudjqmx4fxv" path="res://Rain/Circle.png" id="1_la1mx"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_5bax6"]
+emission_shape = 3
+emission_box_extents = Vector3(10, 0.5, 10)
+direction = Vector3(0, -1, 0)
+spread = 5.0
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.0
+
+[sub_resource type="Curve" id="Curve_skjnw"]
+_limits = [0.0, 0.1, 0.0, 1.0]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.07964602, 0.05446428), 0.23061226, 0.23061226, 0, 0, Vector2(0.47787607, 0.037499994), -0.15694442, -0.15694442, 0, 0, Vector2(1, 0), -0.061656702, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jbngu"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.64705884, 0.67058825, 0.64705884, 0.3254902)
+albedo_texture = ExtResource("1_la1mx")
+use_particle_trails = true
+
+[sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_gfxs6"]
+material = SubResource("StandardMaterial3D_jbngu")
+shape = 0
+size = 0.3
+section_length = 0.4
+curve = SubResource("Curve_skjnw")
+
+[sub_resource type="BoxMesh" id="BoxMesh_5bax6"]
+
+[node name="Rain_Controller" type="Node3D" unique_id=120487015]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1597340805]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 13, -4)
+amount = 1000
+lifetime = 5.0
+randomness = 0.45
+visibility_aabb = AABB(-10, -10, -10, 20, 10, 20)
+trail_enabled = true
+process_material = SubResource("ParticleProcessMaterial_5bax6")
+draw_pass_1 = SubResource("RibbonTrailMesh_gfxs6")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="." unique_id=1752746917]
+transform = Transform3D(32.45, 0, 0, 0, 1, 0, 0, 0, 28.500002, 0, 0, 0)
+mesh = SubResource("BoxMesh_5bax6")

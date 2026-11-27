@@ -1,0 +1,12 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://wm60k5umfyy5"]
+
+[ext_resource type="Texture2D" uid="uid://d260pfxw2br64" path="res://environment/textures/roof/tilable_low_lambert8_BaseColor.1001.png" id="1_pet80"]
+[ext_resource type="Texture2D" uid="uid://dwcbwr142sxv2" path="res://environment/textures/roof/tilable_low_lambert8_Normal.1001.png" id="2_htlgr"]
+[ext_resource type="Texture2D" uid="uid://by1wb43wt5l4" path="res://environment/textures/roof/tilable_low_lambert8_OcclusionRoughnessMetallic.1001.png" id="3_43yfp"]
+
+[resource]
+cull_mode = 2
+albedo_texture = ExtResource("1_pet80")
+orm_texture = ExtResource("3_43yfp")
+normal_enabled = true
+normal_texture = ExtResource("2_htlgr")

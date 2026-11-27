@@ -1,0 +1,12 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://dtmr3uwj0f5eo"]
+
+[ext_resource type="Texture2D" uid="uid://bygxtt8w3rd8v" path="res://environment/textures/warehouse/Base_Col.png" id="1_quuqb"]
+[ext_resource type="Texture2D" uid="uid://dwaps7kth8s1h" path="res://environment/textures/warehouse/Normal.png" id="2_7knvn"]
+[ext_resource type="Texture2D" uid="uid://lfcmdja0npe4" path="res://environment/textures/warehouse/ORM.png" id="3_o433j"]
+
+[resource]
+cull_mode = 2
+albedo_texture = ExtResource("1_quuqb")
+orm_texture = ExtResource("3_o433j")
+normal_enabled = true
+normal_texture = ExtResource("2_7knvn")

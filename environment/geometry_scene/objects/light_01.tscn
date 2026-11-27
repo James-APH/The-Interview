@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dohyoovdorm83"]
+
+[ext_resource type="PackedScene" uid="uid://dhhyaacvk32dl" path="res://environment/geometry_src/objects/light01.fbx" id="1_okc0j"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock_mat.tres" id="2_lx6u8"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="3_744s4"]
+
+[node name="light01" unique_id=1638649394 instance=ExtResource("1_okc0j")]
+
+[node name="light01" parent="." index="0" unique_id=2135471160]
+surface_material_override/0 = ExtResource("2_lx6u8")
+surface_material_override/1 = ExtResource("3_744s4")

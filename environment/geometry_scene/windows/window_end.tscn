@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://clgt1otv8e7h2"]
+
+[ext_resource type="PackedScene" uid="uid://rygxky8c0rrc" path="res://environment/geometry_src/windows/window_end.fbx" id="1_w8qmm"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_m8aq1"]
+
+[node name="window_end" unique_id=1194580869 instance=ExtResource("1_w8qmm")]
+
+[node name="window_end" parent="." index="0" unique_id=2050838830]
+surface_material_override/0 = ExtResource("2_m8aq1")

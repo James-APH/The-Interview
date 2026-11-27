@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://vothwr4sd1my"]
+
+[ext_resource type="PackedScene" uid="uid://qrjs860pfjmy" path="res://environment/geometry_src/windows/long_window.fbx" id="1_1lchg"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_s5iub"]
+
+[node name="long_window" unique_id=1753970561 instance=ExtResource("1_1lchg")]
+
+[node name="long_window" parent="." index="0" unique_id=237020778]
+surface_material_override/0 = ExtResource("2_s5iub")

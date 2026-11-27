@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://txj8h81mieia"]
+
+[ext_resource type="PackedScene" uid="uid://dod2a2aodc235" path="res://environment/geometry_src/objects/wooden_arch.fbx" id="1_t515f"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_idl7w"]
+
+[node name="wooden_arch" unique_id=1733167045 instance=ExtResource("1_t515f")]
+
+[node name="wooden_arch" parent="." index="0" unique_id=1614290482]
+surface_material_override/0 = ExtResource("2_idl7w")

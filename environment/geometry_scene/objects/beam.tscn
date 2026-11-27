@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cs27bluwxckux"]
+
+[ext_resource type="PackedScene" uid="uid://bddxwcl65ita7" path="res://environment/geometry_src/objects/beam.fbx" id="1_c7w4j"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_sw13m"]
+
+[node name="beam" unique_id=776641844 instance=ExtResource("1_c7w4j")]
+
+[node name="beam" parent="." index="0" unique_id=1275118723]
+surface_material_override/0 = ExtResource("2_sw13m")
