@@ -27,11 +27,12 @@ const AIR_ACCELERATION = 80     # how fast you reach air speed cap
 var ground_time = 0.0           # how long you've spent on the ground
 var jump_buffer_calc = 0.0		# time left on a buffered jump press: 0 = no jump 
 var speed_cap = 0.0				# used to set ground speed, walk or sneak
-
+var target = null
 
 # captures the mouse for aim movement
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	$Label.hide()
 
 
 func _unhandled_input(event):
@@ -93,6 +94,16 @@ func _physics_process(delta) :
 		velocity += get_gravity() * delta
 		move_and_slide()
 		
+
+		if $%RayCast3D.is_colliding():
+			var target = ray.get_collider()
+			if is_instance_valid(target):
+				if (target.has_method("interaction") or target.get_parent().has_method("interaction")):
+					$Label.show()
+				else:
+					hide_label()
+		else: hide_label()
+		
 # increases speed in a direction up to a cap
 # because you are sped up in one direction but others are unaffected
 # your overall speed which is the length of the velocity
@@ -130,14 +141,20 @@ func _apply_friction(delta: float) -> void:
 
 
 var inventory: Array[String] = []
-@onready var ray: RayCast3D = $Camera3D/RayCast3D
+@onready var ray: RayCast3D = %RayCast3D
 
 func _unhandled_key_input(event: InputEvent) -> void:
-	if event.is_action_pressed("interact") and ray.is_colliding():
+	if ray.is_colliding():
 		var target = ray.get_collider()
-		if target.has_method("interact"):
-			target.interact(self)
-
+		if not target.has_method("interaction"):
+			target = target.get_parent()
+		if target.has_method("interaction"):
+			$Label.show()
+			if event.is_action_pressed("interact"):
+				target.interaction(self)
+				
+func hide_label():
+	$Label.hide()
 
 func pick_up_item(item_name: String):
 	inventory.append(item_name)

@@ -13,6 +13,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func interact(player: Node):
+func interaction(player: Node):
 	player.pick_up_item(item_name)
+	player.hide_label()
 	queue_free()

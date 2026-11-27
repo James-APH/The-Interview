@@ -9,6 +9,9 @@
 radius = 0.4981079
 height = 1.9929276
 
+[sub_resource type="LabelSettings" id="LabelSettings_lqyn0"]
+font_size = 29
+
 [node name="Player" type="CharacterBody3D" unique_id=1650951866 groups=["Player"]]
 script = ExtResource("1_3c3w1")
 
@@ -28,6 +31,7 @@ transform = Transform3D(1, -4.0745363e-10, 0, -2.910383e-10, 1.0000001, 0, 0, -9
 [node name="Bullet3D" parent="Camera3D/gun_model/Marker3D" unique_id=1143599341 instance=ExtResource("3_83hs8")]
 
 [node name="RayCast3D" type="RayCast3D" parent="Camera3D" unique_id=1969933872]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.11230898, 0.084365994)
 target_position = Vector3(0, 0, -2.5)
 collide_with_areas = true
@@ -48,3 +52,11 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource("3_wnvi2")
 expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=485071216]
+offset_left = 1088.0
+offset_top = 644.0
+offset_right = 1333.0
+offset_bottom = 784.0
+text = "Press E to pick up"
+label_settings = SubResource("LabelSettings_lqyn0")
