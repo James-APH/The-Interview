@@ -6,7 +6,7 @@ extends CharacterBody3D
 
 const SPEED = 6.5               # max walking speed
 const SHIFT_SPEED = 3.0         # max sneak walking speed(hold shift)
-const JUMP = 4.0                # jump velocity (impulse) 
+const JUMP = 4.25                # jump velocity (impulse) 
 const ACCELERATION = 60.0       # ground acceleration
 const FRICTION = 8.0            # ground friction applied after grace period ends
 								# determines how quickly you slow down
@@ -19,10 +19,10 @@ const JUMP_BUFFER_CONST = 0.1   # buffer for jump input before actually landing
 								# and still jump upon landing- helps Bunny hopping
 const FRICTION_GRACE = 0.04     # Grace period where friction is not applied after landing
 								# after a successful bunnyhop you keep your speed
-const AIR_SPEED_CAP = 0.8       # NOT MAXIMUM AIR SPEED - this is the maximum speed
+const AIR_SPEED_CAP = 1.2       # NOT MAXIMUM AIR SPEED - this is the maximum speed
 								# you can gain in a single direction while air strafing
 								# (holding A or D and moving mouse left/right respectively)
-const AIR_ACCELERATION = 30     # how fast you reach air speed cap
+const AIR_ACCELERATION = 80     # how fast you reach air speed cap
 
 var ground_time = 0.0           # how long you've spent on the ground
 var jump_buffer_calc = 0.0		# time left on a buffered jump press: 0 = no jump 
@@ -125,5 +125,20 @@ func _apply_friction(delta: float) -> void:
 	velocity.x *= speed_scaling
 	velocity.z *= speed_scaling
 
-		
-		
+	
+
+
+
+var inventory: Array[String] = []
+@onready var ray: RayCast3D = $Camera3D/RayCast3D
+
+func _unhandled_key_input(event: InputEvent) -> void:
+	if event.is_action_pressed("interact") and ray.is_colliding():
+		var target = ray.get_collider()
+		if target.has_method("interact"):
+			target.interact(self)
+
+
+func pick_up_item(item_name: String):
+	inventory.append(item_name)
+	print("Inventory: ", inventory)

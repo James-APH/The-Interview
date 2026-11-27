@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://fm0l86ubjcul" path="res://player/Player.tscn" id="2_wpdqg"]
 [ext_resource type="PackedScene" uid="uid://c33ppbkiyeafa" path="res://environment/geometry_scene/door/door.tscn" id="3_wpdqg"]
 [ext_resource type="PackedScene" uid="uid://cknyqejxn1su3" path="res://environment/geometry_scene/basic_wall/basic_wall_2x4.tscn" id="4_sf4n2"]
+[ext_resource type="PackedScene" uid="uid://dog7ihhadnpxg" path="res://scenes/item_1.tscn" id="5_wpdqf"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sf4n2"]
 _surfaces = [{
@@ -399,3 +400,6 @@ transform = Transform3D(-1, 0, -1.1920929e-07, 0, 1, 0, 1.1920929e-07, 0, -1, -4
 
 [node name="Basic_Wall2x12" parent="." unique_id=617775391 instance=ExtResource("4_sf4n2")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 33, 0, -14)
+
+[node name="item1" parent="." unique_id=1800446058 instance=ExtResource("5_wpdqf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 0, 28)
