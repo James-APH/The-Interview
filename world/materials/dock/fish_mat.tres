@@ -1,0 +1,16 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://cjfg3ko4su6ut"]
+
+[ext_resource type="Texture2D" uid="uid://dn2cslyswf5m3" path="res://environment/textures/fish/lambert1_COL.1001.png" id="1_ujivy"]
+[ext_resource type="Texture2D" uid="uid://cd8id3mwv1vur" path="res://environment/textures/dock01/trim_low_lambert1_Emissive.1001.jpg" id="2_3vw7c"]
+[ext_resource type="Texture2D" uid="uid://crwg81rn6prub" path="res://environment/textures/fish/lambert1_NRM.1001.png" id="3_3vw7c"]
+[ext_resource type="Texture2D" uid="uid://dyfqewlf181d2" path="res://environment/textures/fish/lambert1_ORM.1001.png" id="4_j0vxi"]
+
+[resource]
+albedo_texture = ExtResource("1_ujivy")
+orm_texture = ExtResource("4_j0vxi")
+emission_energy_multiplier = 5.63
+emission_texture = ExtResource("2_3vw7c")
+normal_enabled = true
+normal_texture = ExtResource("3_3vw7c")
+ao_light_affect = 0.6
+uv1_world_triplanar = true

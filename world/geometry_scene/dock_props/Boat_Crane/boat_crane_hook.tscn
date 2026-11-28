@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dq5rpgtfalr6b"]
+
+[ext_resource type="PackedScene" uid="uid://b640brnp87wyw" path="res://environment/geometry_src/dock_props/boat_hook/Boat_Crane_Hook.fbx" id="1_ysmns"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_d34hd"]
+
+[node name="Boat_Crane_Hook" unique_id=2029300306 instance=ExtResource("1_ysmns")]
+
+[node name="Boat_Crane_Hook" parent="." index="0" unique_id=273199998]
+surface_material_override/0 = ExtResource("2_d34hd")

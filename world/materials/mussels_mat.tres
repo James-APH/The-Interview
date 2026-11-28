@@ -1,0 +1,17 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://cd0sbj8r15nx"]
+
+[ext_resource type="Texture2D" uid="uid://0b3c4bxfvlmk" path="res://environment/textures/Mussels/Mussels_COL.1001.png" id="1_6b81y"]
+[ext_resource type="Texture2D" uid="uid://cd8id3mwv1vur" path="res://environment/textures/dock01/trim_low_lambert1_Emissive.1001.jpg" id="2_t0xns"]
+[ext_resource type="Texture2D" uid="uid://cqlj7cq8d66i4" path="res://environment/textures/Mussels/Mussels_NRM.1001.png" id="3_t0xns"]
+[ext_resource type="Texture2D" uid="uid://bhmieadljd87i" path="res://environment/textures/Mussels/Mussels_ORM.1001.png" id="4_ej6di"]
+
+[resource]
+albedo_texture = ExtResource("1_6b81y")
+orm_texture = ExtResource("4_ej6di")
+emission_energy_multiplier = 5.63
+emission_texture = ExtResource("2_t0xns")
+normal_enabled = true
+normal_texture = ExtResource("3_t0xns")
+ao_enabled = true
+ao_light_affect = 0.6
+uv1_world_triplanar = true

@@ -1,0 +1,15 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://dsf53lsoch4ie"]
+
+[ext_resource type="Texture2D" uid="uid://cjulikdam1c0i" path="res://environment/textures/Bloodborne/bench01/Bench_Main_COL_1001.PNG" id="1_knfpj"]
+[ext_resource type="Texture2D" uid="uid://cd8id3mwv1vur" path="res://environment/textures/dock01/trim_low_lambert1_Emissive.1001.jpg" id="2_343ld"]
+[ext_resource type="Texture2D" uid="uid://hd3dnnf3k5sb" path="res://environment/textures/Bloodborne/bench01/Bench_Main_NRM_1001.PNG" id="3_343ld"]
+[ext_resource type="Texture2D" uid="uid://67ohilqlvs7b" path="res://environment/textures/Bloodborne/bench01/Bench_Main_ORM_1001.PNG" id="4_yyew1"]
+
+[resource]
+albedo_texture = ExtResource("1_knfpj")
+orm_texture = ExtResource("4_yyew1")
+emission_energy_multiplier = 5.63
+emission_texture = ExtResource("2_343ld")
+normal_enabled = true
+normal_texture = ExtResource("3_343ld")
+uv1_world_triplanar = true

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dh2ugc3xn4ql6"]
+
+[ext_resource type="PackedScene" uid="uid://r2abrsqnfyp7" path="res://environment/geometry_src/BloodBorne_props/Dirt_Mound03.fbx" id="1_dmk12"]
+[ext_resource type="Material" uid="uid://dvciyiiufttcu" path="res://environment/materials/Bloodborne/dirt_mat.tres" id="2_b1xdc"]
+
+[node name="Dirt_Mound03" unique_id=772273920 instance=ExtResource("1_dmk12")]
+
+[node name="Dirt_Mound03" parent="." index="0" unique_id=1822533592]
+surface_material_override/0 = ExtResource("2_b1xdc")

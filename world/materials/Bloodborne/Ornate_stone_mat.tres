@@ -1,0 +1,17 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://c8tiscuwdmcyb"]
+
+[ext_resource type="Texture2D" uid="uid://b886618owt1e1" path="res://environment/textures/Bloodborne/Ornate_stone/Walls_low_lambert1_BaseColor.PNG" id="1_o2syg"]
+[ext_resource type="Texture2D" uid="uid://cd8id3mwv1vur" path="res://environment/textures/dock01/trim_low_lambert1_Emissive.1001.jpg" id="2_1gxfk"]
+[ext_resource type="Texture2D" uid="uid://d1gup3j0suskk" path="res://environment/textures/Bloodborne/Ornate_stone/Walls_low_lambert1_Normal.PNG" id="3_1gxfk"]
+[ext_resource type="Texture2D" uid="uid://c3oqwr17asbrs" path="res://environment/textures/Bloodborne/Ornate_stone/Walls_low_lambert1_OcclusionRoughnessMetallic.PNG" id="4_yoss4"]
+
+[resource]
+albedo_color = Color(0.50298274, 0.42517743, 0.43648806, 1)
+albedo_texture = ExtResource("1_o2syg")
+orm_texture = ExtResource("4_yoss4")
+emission_energy_multiplier = 5.63
+emission_texture = ExtResource("2_1gxfk")
+normal_enabled = true
+normal_scale = 2.71
+normal_texture = ExtResource("3_1gxfk")
+uv1_world_triplanar = true

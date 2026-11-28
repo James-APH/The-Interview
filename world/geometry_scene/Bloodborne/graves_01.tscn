@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://csx4u5sxradoo"]
+
+[ext_resource type="PackedScene" uid="uid://cjrvnt5vikiyd" path="res://environment/geometry_src/BloodBorne_props/graves01.fbx" id="1_4ggjn"]
+[ext_resource type="Material" uid="uid://dir16nefnngee" path="res://environment/materials/Bloodborne/graves_mat.tres" id="2_01r55"]
+
+[node name="graves01" unique_id=1586941650 instance=ExtResource("1_4ggjn")]
+
+[node name="graves01" parent="." index="0" unique_id=135312320]
+surface_material_override/0 = ExtResource("2_01r55")

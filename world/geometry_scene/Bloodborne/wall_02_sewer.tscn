@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dye53gpeyub6g"]
+
+[ext_resource type="PackedScene" uid="uid://dkl328nngtgw5" path="res://environment/geometry_src/BloodBorne_props/Wall02_Sewer.fbx" id="1_q7dfg"]
+[ext_resource type="Material" uid="uid://cgyxiwtexiao2" path="res://environment/materials/Bloodborne/basic_stone_mat.tres" id="2_jw3l6"]
+[ext_resource type="Material" uid="uid://c8tiscuwdmcyb" path="res://environment/materials/Bloodborne/Ornate_stone_mat.tres" id="3_v5nbw"]
+[ext_resource type="Material" uid="uid://b07ah7igx2mbi" path="res://environment/materials/bricks_smaller_mat.tres" id="4_6viht"]
+[ext_resource type="Material" uid="uid://drmadbo2h8dky" path="res://environment/materials/Bloodborne/Metal_mat.tres" id="5_t0gsp"]
+
+[node name="Wall02_Sewer" unique_id=986693072 instance=ExtResource("1_q7dfg")]
+
+[node name="Wall02_Sewer" parent="." index="0" unique_id=1202082024]
+surface_material_override/0 = ExtResource("2_jw3l6")
+surface_material_override/1 = ExtResource("3_v5nbw")
+surface_material_override/2 = ExtResource("4_6viht")
+surface_material_override/3 = ExtResource("5_t0gsp")

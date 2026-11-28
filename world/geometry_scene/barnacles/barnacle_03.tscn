@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cituf8os76v8j"]
+
+[ext_resource type="PackedScene" uid="uid://bxt2cy34jqjir" path="res://environment/geometry_src/barnacles/Barnacle03.fbx" id="1_twyom"]
+[ext_resource type="Material" uid="uid://cuttik5lccbeh" path="res://environment/materials/dock/barnacles_mat.tres" id="2_fgbio"]
+
+[node name="Barnacle03" unique_id=1383072909 instance=ExtResource("1_twyom")]
+
+[node name="Barnacle03" parent="." index="0" unique_id=863044144]
+surface_material_override/0 = ExtResource("2_fgbio")

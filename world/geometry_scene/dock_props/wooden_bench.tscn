@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dyqllj6etw5ok"]
+
+[ext_resource type="PackedScene" uid="uid://dacyhj4we5a2n" path="res://environment/geometry_src/dock_props/wooden_Bench.fbx" id="1_qivsd"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_3eps0"]
+
+[node name="wooden_Bench" unique_id=804544751 instance=ExtResource("1_qivsd")]
+
+[node name="wooden_Bench" parent="." index="0" unique_id=1261062557]
+surface_material_override/0 = ExtResource("2_3eps0")

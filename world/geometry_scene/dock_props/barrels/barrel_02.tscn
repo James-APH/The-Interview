@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://7tfgwyxm13em"]
+
+[ext_resource type="PackedScene" uid="uid://ddqcw86y66p4o" path="res://environment/geometry_src/dock_props/barrels/Barrel02.fbx" id="1_g8u5d"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_24aiy"]
+
+[node name="Barrel02" unique_id=748424423 instance=ExtResource("1_g8u5d")]
+
+[node name="Barrel02" parent="." index="0" unique_id=70152575]
+surface_material_override/0 = ExtResource("2_24aiy")

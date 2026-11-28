@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://bq0jwdeo0xg1y"]
-
-[ext_resource type="PackedScene" uid="uid://g5u75dcb1bbu" path="res://environment/geometry_src/windows/window_start8x4.fbx" id="1_kix25"]
-[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_a784v"]
-
-[node name="window_start8x4" unique_id=44026677 instance=ExtResource("1_kix25")]
-
-[node name="window_start8x4" parent="." index="0" unique_id=1901571230]
-surface_material_override/0 = ExtResource("2_a784v")

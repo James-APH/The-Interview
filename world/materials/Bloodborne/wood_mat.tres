@@ -1,0 +1,17 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://tw0503hpfx46"]
+
+[ext_resource type="Texture2D" uid="uid://d0tfhkxey0n2i" path="res://environment/textures/Bloodborne/Wood/Wood_COL.png" id="1_tyot8"]
+[ext_resource type="Texture2D" uid="uid://cd8id3mwv1vur" path="res://environment/textures/dock01/trim_low_lambert1_Emissive.1001.jpg" id="2_o38f7"]
+[ext_resource type="Texture2D" uid="uid://b76pn7sjftpc" path="res://environment/textures/Bloodborne/Wood/Wood_NRM.png" id="3_o38f7"]
+[ext_resource type="Texture2D" uid="uid://btpxtsokt20x5" path="res://environment/textures/Bloodborne/Wood/Wood_ORM.png" id="4_sr0y7"]
+
+[resource]
+albedo_color = Color(0.62233794, 0.622338, 0.62233794, 1)
+albedo_texture = ExtResource("1_tyot8")
+orm_texture = ExtResource("4_sr0y7")
+emission_energy_multiplier = 5.63
+emission_texture = ExtResource("2_o38f7")
+normal_enabled = true
+normal_scale = 1.28
+normal_texture = ExtResource("3_o38f7")
+uv1_world_triplanar = true

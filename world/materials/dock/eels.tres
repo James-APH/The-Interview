@@ -1,0 +1,21 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://vmnr4d8ugskf"]
+
+[ext_resource type="Texture2D" uid="uid://dkelgvj1s7op" path="res://environment/textures/Eels/Eels_COL.1001.png" id="1_vxap4"]
+[ext_resource type="Texture2D" uid="uid://cv6xkbv3cnxum" path="res://environment/textures/Eels/Eels_Height.1001.png" id="2_8g6ye"]
+[ext_resource type="Texture2D" uid="uid://ddoib5v87xxtn" path="res://environment/textures/Eels/Eels_NRM.1001.png" id="3_al8sx"]
+[ext_resource type="Texture2D" uid="uid://b604jc5s14ppd" path="res://environment/textures/Eels/Eels_ORM.1001.png" id="4_g1132"]
+
+[resource]
+cull_mode = 2
+albedo_color = Color(0.9088109, 0.9088109, 0.9088109, 1)
+albedo_texture = ExtResource("1_vxap4")
+orm_texture = ExtResource("4_g1132")
+normal_enabled = true
+normal_texture = ExtResource("3_al8sx")
+heightmap_enabled = true
+heightmap_scale = -6.556
+heightmap_deep_parallax = true
+heightmap_min_layers = 8
+heightmap_max_layers = 32
+heightmap_texture = ExtResource("2_8g6ye")
+heightmap_flip_texture = true

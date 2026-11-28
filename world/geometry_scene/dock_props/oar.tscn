@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://xvj2fi4dsexk"]
+
+[ext_resource type="PackedScene" uid="uid://d13i1ylgljewm" path="res://environment/geometry_src/dock_props/Oar.fbx" id="1_khy8m"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_gnarv"]
+
+[node name="Oar" unique_id=1593502132 instance=ExtResource("1_khy8m")]
+
+[node name="Oar" parent="." index="0" unique_id=1639556342]
+surface_material_override/0 = ExtResource("2_gnarv")

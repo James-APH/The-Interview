@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://x0uhmjqsikvw"]
+
+[ext_resource type="PackedScene" uid="uid://bstvhie23dsu0" path="res://environment/geometry_src/upper_floor/staircase.fbx" id="1_cqimp"]
+[ext_resource type="Material" uid="uid://b7drixualalnc" path="res://environment/materials/warehouse02_mat_no_parralax.tres" id="2_srr3i"]
+
+[node name="staircase" unique_id=1300752296 instance=ExtResource("1_cqimp")]
+
+[node name="staircase" parent="." index="0" unique_id=1367042832]
+surface_material_override/0 = ExtResource("2_srr3i")

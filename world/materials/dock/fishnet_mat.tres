@@ -1,0 +1,13 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://uhluwyfe2obi"]
+
+[ext_resource type="Texture2D" uid="uid://c5rr8h6nocg5s" path="res://environment/textures/fishnet/lambert8_COL.1001.png" id="1_6p7wo"]
+[ext_resource type="Texture2D" uid="uid://cd2nhtoej5w55" path="res://environment/textures/fishnet/lambert8_NRM.1001.png" id="2_i7kyw"]
+[ext_resource type="Texture2D" uid="uid://qd33rvq1n640" path="res://environment/textures/fishnet/lambert8_ORM.1001.png" id="3_cha0w"]
+
+[resource]
+transparency = 1
+cull_mode = 2
+albedo_texture = ExtResource("1_6p7wo")
+orm_texture = ExtResource("3_cha0w")
+normal_enabled = true
+normal_texture = ExtResource("2_i7kyw")

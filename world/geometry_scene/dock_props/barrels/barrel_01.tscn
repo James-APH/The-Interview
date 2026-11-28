@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bwl68201o04dq"]
+
+[ext_resource type="PackedScene" uid="uid://bk1k1igwoyjr" path="res://environment/geometry_src/dock_props/barrels/Barrel01.fbx" id="1_4skaf"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_y6gj7"]
+[ext_resource type="Material" uid="uid://vmnr4d8ugskf" path="res://environment/materials/dock/eels.tres" id="3_jqds2"]
+
+[node name="Barrel01" unique_id=1951700269 instance=ExtResource("1_4skaf")]
+
+[node name="Barrel01" parent="." index="0" unique_id=1880943493]
+surface_material_override/0 = ExtResource("2_y6gj7")
+surface_material_override/1 = ExtResource("3_jqds2")

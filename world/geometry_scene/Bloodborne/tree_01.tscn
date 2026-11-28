@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c8ixswkhjhtci"]
+
+[ext_resource type="PackedScene" uid="uid://t1eafuho71fr" path="res://environment/geometry_src/BloodBorne_props/Tree01.fbx" id="1_1ifta"]
+[ext_resource type="Material" uid="uid://d1wy3mjkmblbk" path="res://environment/materials/Bloodborne/Tree_Stones_mat.tres" id="2_cysqw"]
+[ext_resource type="Material" uid="uid://dvciyiiufttcu" path="res://environment/materials/Bloodborne/dirt_mat.tres" id="3_q7kyr"]
+[ext_resource type="Material" uid="uid://8jesbuwpd8jj" path="res://environment/materials/Bloodborne/Tree_mat.tres" id="4_ayu2w"]
+
+[node name="Tree01" unique_id=856175064 instance=ExtResource("1_1ifta")]
+
+[node name="Tree01" parent="." index="0" unique_id=2135699796]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, 0, 0)
+surface_material_override/0 = ExtResource("2_cysqw")
+surface_material_override/1 = ExtResource("3_q7kyr")
+surface_material_override/2 = ExtResource("4_ayu2w")

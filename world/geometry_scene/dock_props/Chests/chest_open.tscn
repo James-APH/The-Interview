@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b0ac33j6q7x05"]
+
+[ext_resource type="PackedScene" uid="uid://bf2elt1mxalin" path="res://environment/geometry_src/dock_props/chests/Chest_open.fbx" id="1_p1ew3"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_iprn7"]
+
+[node name="Chest_open" unique_id=1531861125 instance=ExtResource("1_p1ew3")]
+
+[node name="Chest_open" parent="." index="0" unique_id=1763512404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50783074, 0)
+surface_material_override/0 = ExtResource("2_iprn7")

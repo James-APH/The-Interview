@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dqiwgu1volsld"]
+
+[ext_resource type="PackedScene" uid="uid://buiieh5ng1fqp" path="res://environment/geometry_src/dock_props/skeleton.fbx" id="1_d50vt"]
+[ext_resource type="Material" uid="uid://t3dlqydwf14g" path="res://environment/materials/dock/skeleton_mat.tres" id="2_esig7"]
+
+[node name="skeleton" unique_id=951814533 instance=ExtResource("1_d50vt")]
+
+[node name="skeleton" parent="." index="0" unique_id=132922287]
+surface_material_override/0 = ExtResource("2_esig7")

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cypxn8axsg3mh"]
+
+[ext_resource type="PackedScene" uid="uid://ca71vf88u4mxh" path="res://environment/geometry_src/door/Doorframe_large.fbx" id="1_0d46r"]
+[ext_resource type="Material" uid="uid://2mftbm65irbf" path="res://environment/materials/warehouse02_mat.tres" id="2_q1n8a"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_umcdi"]
+[ext_resource type="PackedScene" uid="uid://cwle40gtfe0yn" path="res://environment/geometry_scene/door/door_large.tscn" id="3_d5cnx"]
+
+[node name="Doorframe_large" unique_id=1458601019 instance=ExtResource("1_0d46r")]
+
+[node name="Doorframe_large" parent="." index="0" unique_id=803553964]
+surface_material_override/0 = ExtResource("2_q1n8a")
+surface_material_override/1 = ExtResource("2_umcdi")
+
+[node name="door_large" parent="." index="1" unique_id=1772705868 instance=ExtResource("3_d5cnx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.79294753, 0.014058828, 0.08004749)
+
+[node name="door_large2" parent="." index="2" unique_id=1007402574 instance=ExtResource("3_d5cnx")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 8.712304, 0.014058828, 0.08004749)

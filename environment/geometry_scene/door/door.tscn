@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://c33ppbkiyeafa"]
-
-[ext_resource type="PackedScene" uid="uid://dh1h5efr04o1v" path="res://environment/geometry_src/door/door.fbx" id="1_yjbtw"]
-[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_pcyby"]
-
-[node name="door" unique_id=90525557 instance=ExtResource("1_yjbtw")]
-
-[node name="door" parent="." index="0" unique_id=586399955]
-surface_material_override/0 = ExtResource("2_pcyby")

@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://mtuohghct01h"]
-
-[ext_resource type="PackedScene" uid="uid://b5ki1tk34y7lk" path="res://environment/geometry_src/basic_wall/Basic_Wall1x4.fbx" id="1_3jnas"]
-[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_v86pu"]
-
-[node name="Basic_Wall1x4" unique_id=1695912111 instance=ExtResource("1_3jnas")]
-
-[node name="Basic_Wall1x4" parent="." index="0" unique_id=578459431]
-surface_material_override/0 = ExtResource("2_v86pu")

@@ -1,0 +1,19 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://8jesbuwpd8jj"]
+
+[ext_resource type="Texture2D" uid="uid://cv5flftcbvkr3" path="res://environment/textures/Bloodborne/Tree/low_Tree_Mat_BaseColor_1001.PNG" id="1_i4qgu"]
+[ext_resource type="Texture2D" uid="uid://cd8id3mwv1vur" path="res://environment/textures/dock01/trim_low_lambert1_Emissive.1001.jpg" id="2_ujeo3"]
+[ext_resource type="Texture2D" uid="uid://y0xe8wa30yoh" path="res://environment/textures/Bloodborne/Tree/low_Tree_Mat_Normal_1001.PNG" id="3_ujeo3"]
+[ext_resource type="Texture2D" uid="uid://bkwgm13uwxue2" path="res://environment/textures/Bloodborne/Tree/low_Tree_Mat_OcclusionRoughnessMetallic_1001.PNG" id="4_xuf7g"]
+
+[resource]
+albedo_color = Color(0.75833696, 0.659649, 0.59993285, 1)
+albedo_texture = ExtResource("1_i4qgu")
+orm_texture = ExtResource("4_xuf7g")
+emission_energy_multiplier = 5.63
+emission_texture = ExtResource("2_ujeo3")
+normal_enabled = true
+normal_scale = 1.38
+normal_texture = ExtResource("3_ujeo3")
+ao_enabled = true
+ao_light_affect = 1.0
+uv1_world_triplanar = true

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b4ulx6chbdyug"]
+
+[ext_resource type="PackedScene" uid="uid://cktq1bchtntqb" path="res://environment/geometry_src/dock_props/Crane.fbx" id="1_4l7iw"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_5xdvs"]
+
+[node name="Crane" unique_id=1711428751 instance=ExtResource("1_4l7iw")]
+
+[node name="Crane" parent="." index="0" unique_id=1220930992]
+surface_material_override/0 = ExtResource("2_5xdvs")

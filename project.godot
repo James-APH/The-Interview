@@ -25,7 +25,10 @@ window/stretch/aspect="expand"
 [file_customization]
 
 folder_colors={
-"res://environment/": "pink"
+"res://Rain/": "blue",
+"res://mob/": "red",
+"res://scenes/": "pink",
+"res://scripts/": "teal"
 }
 
 [global_group]

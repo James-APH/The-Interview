@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://3e0tcmygfx3u"]
+
+[ext_resource type="PackedScene" uid="uid://bnpskioeo46ji" path="res://player/rifle/rifle.glb" id="1_385j5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mf1r7"]
+albedo_color = Color(0.09493858, 0.09493864, 0.09493861, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_irjb3"]
+albedo_color = Color(0.18280602, 0.0837344, 4.813075e-08, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_twfsx"]
+albedo_color = Color(0.21929482, 0.04390824, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_16fuj"]
+albedo_color = Color(0.21568628, 0.09411765, 0.09411765, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t5q1l"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dry5y"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xdchp"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j481j"]
+albedo_color = Color(0.3970895, 0, 0.056768566, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4vfde"]
+albedo_color = Color(0.49539667, 0.07897062, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rby2e"]
+albedo_color = Color(0.4, 0.12156863, 0.12156863, 1)
+
+[sub_resource type="Animation" id="Animation_dbb7s"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_4yb7j"]
+resource_name = "shoot"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0.05), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8xxtb"]
+_data = {
+&"RESET": SubResource("Animation_dbb7s"),
+&"shoot": SubResource("Animation_4yb7j")
+}
+
+[node name="rifle" unique_id=1628218 instance=ExtResource("1_385j5")]
+
+[node name="Node" parent="." index="0" unique_id=188156932]
+surface_material_override/0 = SubResource("StandardMaterial3D_mf1r7")
+surface_material_override/1 = SubResource("StandardMaterial3D_irjb3")
+surface_material_override/2 = SubResource("StandardMaterial3D_twfsx")
+surface_material_override/3 = SubResource("StandardMaterial3D_16fuj")
+surface_material_override/4 = SubResource("StandardMaterial3D_t5q1l")
+surface_material_override/5 = SubResource("StandardMaterial3D_dry5y")
+surface_material_override/6 = SubResource("StandardMaterial3D_xdchp")
+surface_material_override/7 = SubResource("StandardMaterial3D_j481j")
+surface_material_override/8 = SubResource("StandardMaterial3D_4vfde")
+surface_material_override/9 = SubResource("StandardMaterial3D_rby2e")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1" unique_id=1031957705]
+root_node = NodePath("../Node")
+libraries/ = SubResource("AnimationLibrary_8xxtb")

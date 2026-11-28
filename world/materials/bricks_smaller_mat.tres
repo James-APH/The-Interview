@@ -1,0 +1,28 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://b07ah7igx2mbi"]
+
+[ext_resource type="Shader" uid="uid://dy7h8wfo2s5do" path="res://environment/materials/parralax_triplanar.gdshader" id="1_t145p"]
+[ext_resource type="Texture2D" uid="uid://h3du14o3a1q2" path="res://environment/textures/bricks/col.png" id="2_5w8ni"]
+[ext_resource type="Texture2D" uid="uid://cw2en5tjuy0gb" path="res://environment/textures/bricks/normal.png" id="4_kl543"]
+[ext_resource type="Texture2D" uid="uid://c6nenrs21i6i6" path="res://environment/textures/bricks/ORM.png" id="5_6w7vw"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_t145p")
+shader_parameter/albedo_tex = ExtResource("2_5w8ni")
+shader_parameter/normal_tex = ExtResource("4_kl543")
+shader_parameter/orm_tex = ExtResource("5_6w7vw")
+shader_parameter/height_tex = ExtResource("5_6w7vw")
+shader_parameter/albedo_tint = Color(0.9831942, 0.8766811, 0.7950953, 1)
+shader_parameter/roughness_mult = 1.4490000688275
+shader_parameter/metallic_mult = 0.0
+shader_parameter/ao_strength = 1.0000000475
+shader_parameter/normal_scale = 1.0
+shader_parameter/brightness = 0.4290000203775
+shader_parameter/uv_scale = Vector3(0.5, 0.5, 0.5)
+shader_parameter/uv_offset = Vector3(0, 0, 0)
+shader_parameter/triplanar_sharpness = 4.0
+shader_parameter/world_triplanar = true
+shader_parameter/height_scale = 0.034000001615
+shader_parameter/min_layers = 8
+shader_parameter/max_layers = 32
+shader_parameter/invert_height = true

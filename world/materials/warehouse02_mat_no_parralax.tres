@@ -1,0 +1,17 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://b7drixualalnc"]
+
+[ext_resource type="Texture2D" uid="uid://btpq5g8lgdbav" path="res://environment/textures/warehouse02/col.png" id="1_rlpg1"]
+[ext_resource type="Texture2D" uid="uid://b171h440i1cro" path="res://environment/textures/warehouse02/ORM.png" id="2_xoa1y"]
+[ext_resource type="Texture2D" uid="uid://dg6y7mu6jd68w" path="res://environment/textures/warehouse02/normal.png" id="3_pk0g8"]
+
+[resource]
+cull_mode = 2
+albedo_texture = ExtResource("1_rlpg1")
+orm_texture = ExtResource("2_xoa1y")
+normal_enabled = true
+normal_texture = ExtResource("3_pk0g8")
+heightmap_scale = 0.711
+heightmap_deep_parallax = true
+heightmap_min_layers = 8
+heightmap_max_layers = 32
+heightmap_texture = ExtResource("2_xoa1y")

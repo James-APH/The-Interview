@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://da04a0l6nspwe"]
+
+[ext_resource type="PackedScene" uid="uid://d2li3pdegodnu" path="res://environment/geometry_src/pipes/pipe_corner_02.fbx" id="1_sbk70"]
+[ext_resource type="Material" uid="uid://2mftbm65irbf" path="res://environment/materials/warehouse02_mat.tres" id="2_oyiue"]
+
+[node name="pipe_corner_02" unique_id=120766076 instance=ExtResource("1_sbk70")]
+
+[node name="pipe_corner_02" parent="." index="0" unique_id=1607257808]
+surface_material_override/0 = ExtResource("2_oyiue")

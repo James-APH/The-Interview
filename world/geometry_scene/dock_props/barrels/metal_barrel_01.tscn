@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cdiumy4j382l2"]
+
+[ext_resource type="PackedScene" uid="uid://l31lfuqdmg3j" path="res://environment/geometry_src/dock_props/barrels/Metal_Barrel01.fbx" id="1_fayua"]
+[ext_resource type="Material" uid="uid://2mftbm65irbf" path="res://environment/materials/warehouse02_mat.tres" id="2_ffa23"]
+
+[node name="Metal_Barrel01" unique_id=1709458306 instance=ExtResource("1_fayua")]
+
+[node name="Metal_Barrel01" parent="." index="0" unique_id=1294823569]
+surface_material_override/0 = ExtResource("2_ffa23")

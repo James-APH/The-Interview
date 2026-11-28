@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dvfstk8usswbp"]
+
+[ext_resource type="PackedScene" uid="uid://dipe8p2h4edam" path="res://environment/geometry_src/upper_floor/upper_platform_broken_opposite.fbx" id="1_o641j"]
+[ext_resource type="Material" uid="uid://2mftbm65irbf" path="res://environment/materials/warehouse02_mat.tres" id="2_of6sq"]
+[ext_resource type="Material" uid="uid://2opqk0c7s01d" path="res://environment/materials/warehouse02_transparent_mat.tres" id="3_ahehg"]
+
+[node name="upper_platform_broken_opposite" unique_id=1873739024 instance=ExtResource("1_o641j")]
+
+[node name="upper_platform_broken_opposite" parent="." index="0" unique_id=468089450]
+surface_material_override/0 = ExtResource("2_of6sq")
+surface_material_override/1 = ExtResource("3_ahehg")

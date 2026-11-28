@@ -1,14 +1,33 @@
 [gd_scene format=3 uid="uid://bn1uv7ljtrc6v"]
 
-[ext_resource type="Script" uid="uid://i75awn1n8kc2" path="res://player/bullet_3d.gd" id="1_hgguu"]
 [ext_resource type="PackedScene" uid="uid://c1ks5n2cj5mjb" path="res://player/projectile_3D.tscn" id="1_kixxk"]
+
+[sub_resource type="GDScript" id="GDScript_kixxk"]
+script/source = "extends Area3D
+
+const SPEED = 55.0
+const RANGE = 45.0
+var travelled_distance = 0.0
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _physics_process(delta):
+	position += - transform.basis.z * SPEED * delta
+	travelled_distance += SPEED * delta
+	if travelled_distance > RANGE:
+		queue_free()
+"
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_lc8yl"]
 radius = 0.090235
 
 [node name="Bullet3D" type="Area3D" unique_id=1143599341]
 transform = Transform3D(-1, 8.742278e-08, -8.7422784e-08, 8.742278e-08, 1, 1.9106857e-15, 8.7422784e-08, -9.28477e-15, -1, 0, 0, 0)
-script = ExtResource("1_hgguu")
+script = SubResource("GDScript_kixxk")
 
 [node name="projectile_model" parent="." unique_id=330016887 instance=ExtResource("1_kixxk")]
 transform = Transform3D(-2.1200023e-08, 0, 0.485, 0, 0.485, 0, -0.485, 0, -2.1200023e-08, 0, 0, 0)

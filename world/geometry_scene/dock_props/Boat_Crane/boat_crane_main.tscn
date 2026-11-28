@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://8vxvx48ceuwk"]
+
+[ext_resource type="PackedScene" uid="uid://dpv0tmwdqrf3" path="res://environment/geometry_src/dock_props/boat_hook/Boat_Crane_Main.fbx" id="1_4pa0j"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_0tnrx"]
+[ext_resource type="Script" uid="uid://bi51jij84aq1s" path="res://environment/geometry_scene/dock_props/Boat_Crane/boat_crane_main.gd" id="2_6jntb"]
+[ext_resource type="PackedScene" uid="uid://dq5rpgtfalr6b" path="res://environment/geometry_scene/dock_props/Boat_Crane/boat_crane_hook.tscn" id="3_0tnrx"]
+
+[node name="Boat_Crane_Main" unique_id=83516039 instance=ExtResource("1_4pa0j")]
+script = ExtResource("2_6jntb")
+
+[node name="Boat_Crane_Main" parent="." index="0" unique_id=1355889885]
+surface_material_override/0 = ExtResource("2_0tnrx")
+
+[node name="Boat_Crane_Hook" parent="." index="1" unique_id=2029300306 instance=ExtResource("3_0tnrx")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.422658, 2.2462764)

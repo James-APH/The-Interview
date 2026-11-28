@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bp7sqv83n1f58"]
+
+[ext_resource type="PackedScene" uid="uid://dpv4oierk2ae5" path="res://environment/geometry_src/dock_props/Anchor.fbx" id="1_5gyhk"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_n6fi0"]
+
+[node name="Anchor" unique_id=191226261 instance=ExtResource("1_5gyhk")]
+
+[node name="Anchor" parent="." index="0" unique_id=1023655475]
+surface_material_override/0 = ExtResource("2_n6fi0")

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://tof7uvhm08fa"]
+
+[ext_resource type="PackedScene" uid="uid://bqqd8y0rsratj" path="res://environment/geometry_src/dock/dock_stairs.fbx" id="1_4r58t"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_m4ubc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m4ubc"]
+size = Vector3(0.215, 1.8298782, 3.84)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p3j6p"]
+size = Vector3(0.12, 0.39822266, 3.84)
+
+[node name="dock_stairs" unique_id=863793928 instance=ExtResource("1_4r58t")]
+
+[node name="dock_stairs" parent="." index="0" unique_id=1943782816]
+surface_material_override/0 = ExtResource("2_m4ubc")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="dock_stairs" index="0" unique_id=1836091466]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="dock_stairs/StaticBody3D" index="0" unique_id=1823799487]
+transform = Transform3D(0.6394674, -0.7688182, 0, 0.7688182, 0.6394674, 0, 0, 0, 1, -0.40427172, 0.49717432, 0.31287062)
+shape = SubResource("BoxShape3D_m4ubc")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="dock_stairs/StaticBody3D" index="1" unique_id=1395776510]
+transform = Transform3D(-0.48252305, -0.87588334, 0, 0.87588334, -0.48252305, 0, 0, 0, 1, -1.1825905, 1.0153556, 0.31287062)
+shape = SubResource("BoxShape3D_p3j6p")

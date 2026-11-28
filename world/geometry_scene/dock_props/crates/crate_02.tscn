@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bnrnghbsmspeh"]
+
+[ext_resource type="PackedScene" uid="uid://cqq74y5s2pff8" path="res://environment/geometry_src/dock_props/crates/Crate02.fbx" id="1_fq5ku"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_ve3h8"]
+
+[node name="Crate02" unique_id=1657633869 instance=ExtResource("1_fq5ku")]
+
+[node name="Crate02" parent="." index="0" unique_id=1856725682]
+surface_material_override/0 = ExtResource("2_ve3h8")

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dqtjwrsygih3h"]
+
+[ext_resource type="PackedScene" uid="uid://cjjm8xwj4woce" path="res://environment/geometry_src/rocks/rock01.fbx" id="1_4bh4l"]
+[ext_resource type="Shader" uid="uid://dbf7d5mhr3605" path="res://environment/geometry_scene/rocks/rocks_shader.gdshader" id="2_b2kwp"]
+[ext_resource type="Texture2D" uid="uid://dccbd2nl6qx78" path="res://environment/textures/rock01/T_uktjfiu_2K_B.PNG" id="3_jbf0i"]
+[ext_resource type="Texture2D" uid="uid://cq8c5obig2bh1" path="res://environment/textures/rock01/T_uktjfiu_2K_N.PNG" id="4_m8pi2"]
+[ext_resource type="Texture2D" uid="uid://ckkkg0oqbhrve" path="res://environment/textures/rock01/T_uktjfiu_2K_ORM.PNG" id="5_gfhf1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4bh4l"]
+render_priority = 0
+shader = ExtResource("2_b2kwp")
+shader_parameter/albedo_tint = Color(0.5543889, 0.6917984, 0.8249628, 1)
+shader_parameter/albedo_texture = ExtResource("3_jbf0i")
+shader_parameter/saturation = 0.27200001292
+shader_parameter/orm_texture = ExtResource("5_gfhf1")
+shader_parameter/ao_light_affect = 2.118000100605
+shader_parameter/roughness = 0.606000028785
+shader_parameter/metallic = 1.0
+shader_parameter/normal_texture = ExtResource("4_m8pi2")
+shader_parameter/normal_scale = 2.263000867492501
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+
+[node name="rock01" unique_id=1861396771 instance=ExtResource("1_4bh4l")]
+
+[node name="rock01" parent="." index="0" unique_id=1841413021]
+surface_material_override/0 = SubResource("ShaderMaterial_4bh4l")

@@ -1,0 +1,28 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://ddqa76dosu0b0"]
+
+[ext_resource type="Shader" uid="uid://dy7h8wfo2s5do" path="res://environment/materials/parralax_triplanar.gdshader" id="1_5ycsx"]
+[ext_resource type="Texture2D" uid="uid://0bed7x530ift" path="res://environment/textures/Bloodborne/Floor Stones/Bricks_basecolor.PNG" id="2_wigka"]
+[ext_resource type="Texture2D" uid="uid://hm7wa7m1x6vc" path="res://environment/textures/Bloodborne/Floor Stones/Bricks_height.PNG" id="3_o5lcq"]
+[ext_resource type="Texture2D" uid="uid://beeycx1l2k18p" path="res://environment/textures/Bloodborne/Floor Stones/Bricks_normal.PNG" id="4_apesp"]
+[ext_resource type="Texture2D" uid="uid://cgeitmtjpv44y" path="res://environment/textures/concrete/ORM.png" id="4_h1lqu"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_5ycsx")
+shader_parameter/albedo_tex = ExtResource("2_wigka")
+shader_parameter/normal_tex = ExtResource("4_apesp")
+shader_parameter/orm_tex = ExtResource("4_h1lqu")
+shader_parameter/height_tex = ExtResource("3_o5lcq")
+shader_parameter/albedo_tint = Color(1, 1, 1, 1)
+shader_parameter/roughness_mult = 1.0
+shader_parameter/metallic_mult = 1.0
+shader_parameter/ao_strength = 0.5350000254125
+shader_parameter/normal_scale = 1.0
+shader_parameter/uv_scale = Vector3(0.25, 0.25, 0.25)
+shader_parameter/uv_offset = Vector3(0, 0, 0)
+shader_parameter/triplanar_sharpness = 4.0
+shader_parameter/world_triplanar = true
+shader_parameter/height_scale = 0.0230000010925
+shader_parameter/min_layers = 8
+shader_parameter/max_layers = 32
+shader_parameter/invert_height = true

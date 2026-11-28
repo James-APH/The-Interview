@@ -1,0 +1,15 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://d1wy3mjkmblbk"]
+
+[ext_resource type="Texture2D" uid="uid://ssd0180iv6u1" path="res://environment/textures/Bloodborne/Tree_Stones/Stones_low_Tree_Stones_BaseColor_1001.PNG" id="1_4swug"]
+[ext_resource type="Texture2D" uid="uid://cd8id3mwv1vur" path="res://environment/textures/dock01/trim_low_lambert1_Emissive.1001.jpg" id="2_bouat"]
+[ext_resource type="Texture2D" uid="uid://crwlitkuqf8fe" path="res://environment/textures/Bloodborne/Tree_Stones/Stones_low_Tree_Stones_Normal_1001.PNG" id="3_wjeit"]
+[ext_resource type="Texture2D" uid="uid://df6g80xbnnb7d" path="res://environment/textures/Bloodborne/Tree_Stones/Stones_low_Tree_Stones_OcclusionRoughnessMetallic_1001.PNG" id="4_pbyjr"]
+
+[resource]
+albedo_texture = ExtResource("1_4swug")
+orm_texture = ExtResource("4_pbyjr")
+emission_energy_multiplier = 5.63
+emission_texture = ExtResource("2_bouat")
+normal_enabled = true
+normal_texture = ExtResource("3_wjeit")
+uv1_world_triplanar = true

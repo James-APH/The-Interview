@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c5cpjjm18fclm"]
+
+[ext_resource type="PackedScene" uid="uid://ddi3vjtm7ykcb" path="res://environment/geometry_src/roof/triangle01.fbx" id="1_7nojg"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_jxbtf"]
+
+[node name="triangle01" unique_id=1282538297 instance=ExtResource("1_7nojg")]
+
+[node name="triangle01" parent="." index="0" unique_id=2093343249]
+surface_material_override/0 = ExtResource("2_jxbtf")

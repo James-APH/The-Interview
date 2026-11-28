@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://nb1d2y2yi4ny"]
+
+[ext_resource type="PackedScene" uid="uid://ivj7qf0np5ac" path="res://environment/geometry_src/rope_fences/rope_fence05.fbx" id="1_rqkbx"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_pts1l"]
+
+[node name="rope_fence05" unique_id=523859416 instance=ExtResource("1_rqkbx")]
+
+[node name="rope_fence05" parent="." index="0" unique_id=1591027197]
+material_override = ExtResource("2_pts1l")

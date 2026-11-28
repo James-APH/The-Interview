@@ -1,0 +1,18 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://dwblipa5mhc8p"]
+
+[ext_resource type="Texture2D" uid="uid://bygxtt8w3rd8v" path="res://environment/textures/warehouse/Base_Col.png" id="1_5rgcs"]
+[ext_resource type="Texture2D" uid="uid://lfcmdja0npe4" path="res://environment/textures/warehouse/ORM.png" id="2_rlh3d"]
+[ext_resource type="Texture2D" uid="uid://dwaps7kth8s1h" path="res://environment/textures/warehouse/Normal.png" id="3_f6spa"]
+
+[resource]
+cull_mode = 2
+albedo_color = Color(0.9980945, 0.51876426, 0.5011847, 1)
+albedo_texture = ExtResource("1_5rgcs")
+normal_enabled = true
+normal_texture = ExtResource("3_f6spa")
+heightmap_enabled = true
+heightmap_scale = 0.711
+heightmap_deep_parallax = true
+heightmap_min_layers = 8
+heightmap_max_layers = 32
+heightmap_texture = ExtResource("2_rlh3d")

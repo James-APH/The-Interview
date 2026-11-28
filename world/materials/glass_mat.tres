@@ -1,0 +1,15 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://46o4yilpk752"]
+
+[ext_resource type="Texture2D" uid="uid://dsrooqn71hle3" path="res://environment/textures/glass/col.png" id="1_ssj43"]
+[ext_resource type="Texture2D" uid="uid://cd8id3mwv1vur" path="res://environment/textures/dock01/trim_low_lambert1_Emissive.1001.jpg" id="2_s801x"]
+[ext_resource type="Texture2D" uid="uid://cdwakhuij7wwg" path="res://environment/textures/dock01/lambert1_NRM.1001.jpg" id="3_0qdou"]
+[ext_resource type="Texture2D" uid="uid://r5nhipri3c57" path="res://environment/textures/glass/ORM.png" id="4_s801x"]
+
+[resource]
+transparency = 1
+cull_mode = 2
+albedo_texture = ExtResource("1_ssj43")
+orm_texture = ExtResource("4_s801x")
+emission_energy_multiplier = 5.63
+emission_texture = ExtResource("2_s801x")
+normal_texture = ExtResource("3_0qdou")
