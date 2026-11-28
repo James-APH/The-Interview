@@ -40,8 +40,10 @@ transform = Transform3D(0.98583835, 0, 0.16769837, 0, 1, 0, -0.16769837, 0, 0.98
 
 [node name="RayCast3D" type="RayCast3D" parent="Camera3D/rifle" unique_id=1969933872]
 unique_name_in_owner = true
-transform = Transform3D(0.98583835, 0, -0.16769837, 0, 1, 0, 0.16769837, 0, 0.98583835, -0.35044155, 0.15300322, 0.6060565)
-target_position = Vector3(0, 0, -2.5)
+transform = Transform3D(0.98583835, 0, -0.16769837, 0, 1, 0, 0.16769837, 0, 0.98583835, -0.25972396, 0.15300322, 0.07276058)
+target_position = Vector3(0, 0, -1.25)
+collision_mask = 2
+hit_from_inside = true
 collide_with_areas = true
 
 [node name="Marker3D" type="Marker3D" parent="Camera3D/rifle" unique_id=290965532]

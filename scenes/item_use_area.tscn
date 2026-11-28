@@ -9,6 +9,7 @@ radius = 1.8076172
 script = ExtResource("1_elvys")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1059600063]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=840527550]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0220187, 0)

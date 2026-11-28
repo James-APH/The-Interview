@@ -13,6 +13,7 @@ script = ExtResource("1_pag02")
 transform = Transform3D(0.002, 0, 0, 0, 0.002, 0, 0, 0, 0.002, 0, 0, 0)
 
 [node name="Area3D" type="Area3D" parent="." unique_id=810649336]
+collision_layer = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=376810534]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.69103837, 0)
