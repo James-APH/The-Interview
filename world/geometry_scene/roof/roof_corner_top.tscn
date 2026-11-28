@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://b0t7ffd5lyiyc"]
 
-[ext_resource type="PackedScene" uid="uid://umxu0vtcbagv" path="res://environment/geometry_src/roof/roof_corner_top.fbx" id="1_ox7ql"]
-[ext_resource type="Material" uid="uid://wm60k5umfyy5" path="res://environment/materials/roof_mat.tres" id="2_6cyfw"]
+[ext_resource type="PackedScene" uid="uid://umxu0vtcbagv" path="res://world/geometry_src/roof/roof_corner_top.fbx" id="1_ox7ql"]
+[ext_resource type="Material" uid="uid://wm60k5umfyy5" path="res://world/materials/roof_mat.tres" id="2_6cyfw"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_x3ksc"]
+points = PackedVector3Array(1.504983, 0, 1.932383, -0.08324127, 0, 1.932383, 1.504983, 0, -1.14440915e-07, -0.08324127, 0, -1.14440915e-07)
 
 [node name="roof_corner_top" unique_id=1459611765 instance=ExtResource("1_ox7ql")]
 
-[node name="roof_corner_top" parent="." index="0" unique_id=948467088]
+[node name="roof_corner_top" parent="." index="0" unique_id=851266785]
 surface_material_override/0 = ExtResource("2_6cyfw")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="roof_corner_top" index="0" unique_id=933150181]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="roof_corner_top/StaticBody3D" index="0" unique_id=737445113]
+shape = SubResource("ConvexPolygonShape3D_x3ksc")

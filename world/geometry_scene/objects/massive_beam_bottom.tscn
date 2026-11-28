@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://u7m6sol1dxyg"]
 
-[ext_resource type="PackedScene" uid="uid://dos0f5hb4ha5s" path="res://environment/geometry_src/objects/massive_beam_bottom.fbx" id="1_6g1el"]
-[ext_resource type="Material" uid="uid://b7drixualalnc" path="res://environment/materials/warehouse02_mat_no_parralax.tres" id="2_o342t"]
+[ext_resource type="PackedScene" uid="uid://dos0f5hb4ha5s" path="res://world/geometry_src/objects/massive_beam_bottom.fbx" id="1_6g1el"]
+[ext_resource type="Material" uid="uid://b7drixualalnc" path="res://world/materials/warehouse02_mat_no_parralax.tres" id="2_o342t"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pureh"]
+points = PackedVector3Array(1.67213, -0.63975435, 1.3811117, 1.3811113, -0.63975435, 1.6721307, 1.67213, -0.92995596, 1.3811117, 1.67213, -0.63975435, -1.3814392, 1.1146442, 0.87151504, 0.7735404, -1.3814393, -0.63975435, 1.6721307, 1.3811113, -0.92995596, 1.6721307, 0.7735399, 0.87151504, 1.1146446, 1.67213, -0.92995596, -1.3814392, 1.3811113, -0.63975435, -1.6721307, 0.7735399, 0.87151504, -1.1149721, 1.1146442, 0.87151504, -0.7738679, 1.0603031, 0.9297739, 0.75095284, -1.6721307, -0.63975435, 1.3811117, -1.3814393, -0.92995596, 1.6721307, -0.773868, 0.87151504, 1.1146446, -1.1149721, 0.87151504, 0.7735404, 0.75095236, 0.9297739, 1.0603036, 1.3811113, -0.92995596, -1.6721307, -1.3814393, -0.63975435, -1.6721307, -0.773868, 0.87151504, -1.1149721, 0.75095236, 0.9297739, -1.060631, 1.0603031, 0.9297739, -0.75128037, -0.89237064, 0.92995596, 0.6190287, -1.6721307, -0.92995596, 1.3811117, -1.6721307, -0.63975435, -1.3814392, -0.75128055, 0.9297739, 1.0603036, -1.0606313, 0.92995596, 0.75095284, -1.1149721, 0.87151504, -0.7738679, -1.3814393, -0.92995596, -1.6721307, -0.75128055, 0.9297739, -1.060631, -1.6721307, -0.92995596, -1.3814392, -1.0606313, 0.9297739, -0.75128037)
 
 [node name="massive_beam_bottom" unique_id=1247724895 instance=ExtResource("1_6g1el")]
 
-[node name="massive_beam_bottom" parent="." index="0" unique_id=743887412]
+[node name="massive_beam_bottom" parent="." index="0" unique_id=1136349612]
 surface_material_override/0 = ExtResource("2_o342t")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="massive_beam_bottom" index="0" unique_id=1628080325]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="massive_beam_bottom/StaticBody3D" index="0" unique_id=984963561]
+shape = SubResource("ConvexPolygonShape3D_pureh")

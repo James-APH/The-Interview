@@ -1,9 +1,29 @@
 [gd_scene format=3 uid="uid://di6a6rt6h6jc5"]
 
-[ext_resource type="PackedScene" uid="uid://c0a4kigad5cfc" path="res://environment/geometry_src/door/open_door.fbx" id="1_awxxf"]
-[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_0yf02"]
+[ext_resource type="PackedScene" uid="uid://c0a4kigad5cfc" path="res://world/geometry_src/door/open_door.fbx" id="1_awxxf"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://world/materials/warehouse_mat.tres" id="2_0yf02"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4xiim"]
+size = Vector3(1.7376671, 4.0250244, 0.11096954)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ye1kb"]
+size = Vector3(1.6962814, 0.7107544, 0.11096954)
 
 [node name="open_door" unique_id=1447299802 instance=ExtResource("1_awxxf")]
 
-[node name="open_door" parent="." index="0" unique_id=1613121064]
+[node name="open_door" parent="." index="0" unique_id=809675022]
 surface_material_override/0 = ExtResource("2_0yf02")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="open_door" index="0" unique_id=258534836]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="open_door/StaticBody3D" index="0" unique_id=1430382536]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.6240097, 0.8768959, 1.9890137, 0.013732612)
+shape = SubResource("BoxShape3D_4xiim")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="open_door/StaticBody3D" index="1" unique_id=1343692998]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.6240097, 4.1289105, 1.9801636, 0.01902426)
+shape = SubResource("BoxShape3D_4xiim")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="open_door/StaticBody3D" index="2" unique_id=2036984978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.6240097, 2.5809417, 3.6347694, 0.01902426)
+shape = SubResource("BoxShape3D_ye1kb")

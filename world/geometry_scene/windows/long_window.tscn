@@ -1,9 +1,35 @@
 [gd_scene format=3 uid="uid://vothwr4sd1my"]
 
-[ext_resource type="PackedScene" uid="uid://qrjs860pfjmy" path="res://environment/geometry_src/windows/long_window.fbx" id="1_1lchg"]
-[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_s5iub"]
+[ext_resource type="PackedScene" uid="uid://qrjs860pfjmy" path="res://world/geometry_src/windows/long_window.fbx" id="1_1lchg"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://world/materials/warehouse_mat.tres" id="2_s5iub"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bttjj"]
+size = Vector3(0.5690918, 3.9672852, 0.11608887)
 
 [node name="long_window" unique_id=1753970561 instance=ExtResource("1_1lchg")]
 
-[node name="long_window" parent="." index="0" unique_id=237020778]
+[node name="long_window" parent="." index="0" unique_id=1354496636]
 surface_material_override/0 = ExtResource("2_s5iub")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="long_window" index="0" unique_id=1972865767]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6537206, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="long_window/StaticBody3D" index="0" unique_id=197655600]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.93214667, 1.9990244, 0)
+shape = SubResource("BoxShape3D_bttjj")
+debug_color = Color(0.84705883, 0, 0.90588236, 1)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="long_window/StaticBody3D" index="1" unique_id=1577047541]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.364381, 1.9990244, 0)
+shape = SubResource("BoxShape3D_bttjj")
+debug_color = Color(0.84705883, 0, 0.90588236, 1)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="long_window/StaticBody3D" index="2" unique_id=2134344958]
+transform = Transform3D(5.0657, 0, 0, 0, 0.120350346, 0, 0, 0, 1, 2.641536, 0.2589414, 0)
+shape = SubResource("BoxShape3D_bttjj")
+debug_color = Color(0.84705883, 0, 0.90588236, 1)
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="long_window/StaticBody3D" index="3" unique_id=263941899]
+transform = Transform3D(5.0657, 0, 0, 0, 0.3588505, 0, 0, 0, 1, 2.641536, 3.2811494, 0)
+shape = SubResource("BoxShape3D_bttjj")
+debug_color = Color(0.84705883, 0, 0.90588236, 1)

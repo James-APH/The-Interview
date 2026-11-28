@@ -1,9 +1,9 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://bvx0o4b3yee7a"]
 
-[ext_resource type="Shader" uid="uid://dy7h8wfo2s5do" path="res://environment/materials/parralax_triplanar.gdshader" id="1_0sgda"]
-[ext_resource type="Texture2D" uid="uid://h3du14o3a1q2" path="res://environment/textures/bricks/col.png" id="1_2vv0x"]
-[ext_resource type="Texture2D" uid="uid://cw2en5tjuy0gb" path="res://environment/textures/bricks/normal.png" id="3_0sgda"]
-[ext_resource type="Texture2D" uid="uid://c6nenrs21i6i6" path="res://environment/textures/bricks/ORM.png" id="4_sot02"]
+[ext_resource type="Shader" uid="uid://dy7h8wfo2s5do" path="res://world/materials/parralax_triplanar.gdshader" id="1_0sgda"]
+[ext_resource type="Texture2D" uid="uid://h3du14o3a1q2" path="res://world/textures/bricks/col.png" id="1_2vv0x"]
+[ext_resource type="Texture2D" uid="uid://cw2en5tjuy0gb" path="res://world/textures/bricks/normal.png" id="3_0sgda"]
+[ext_resource type="Texture2D" uid="uid://c6nenrs21i6i6" path="res://world/textures/bricks/ORM.png" id="4_sot02"]
 
 [resource]
 render_priority = 0

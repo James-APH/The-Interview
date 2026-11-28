@@ -45,7 +45,13 @@
 [ext_resource type="PackedScene" uid="uid://cxm013qh4ejyd" path="res://world/geometry_scene/windows/window_start_12x_4.tscn" id="36_m17wn"]
 [ext_resource type="PackedScene" uid="uid://dlh1u4jjga5bx" path="res://world/geometry_scene/windows/window_middle.tscn" id="37_8x4i3"]
 [ext_resource type="PackedScene" uid="uid://clgt1otv8e7h2" path="res://world/geometry_scene/windows/window_end.tscn" id="38_djlq8"]
+[ext_resource type="PackedScene" uid="uid://b047bbia2hosy" path="res://world/geometry_scene/rope_fences/rope_fence_01.tscn" id="41_lnsl1"]
+[ext_resource type="PackedScene" uid="uid://byjdvm0ewhjl6" path="res://world/geometry_scene/rope_fences/rope_fence_02.tscn" id="42_1u5dl"]
+[ext_resource type="PackedScene" uid="uid://ekifsnqhax73" path="res://world/geometry_scene/rope_fences/rope_fence_08.tscn" id="43_vjhti"]
+[ext_resource type="PackedScene" uid="uid://8gp4pfkbqua8" path="res://world/geometry_scene/rope_fences/rope_fence_09.tscn" id="44_ctwlg"]
 [ext_resource type="PackedScene" uid="uid://b7y0o0p7etix7" path="res://world/geometry_scene/basic_wall/basic_wall_halfx_4.tscn" id="46_8rkag"]
+[ext_resource type="PackedScene" uid="uid://nb1d2y2yi4ny" path="res://world/geometry_scene/rope_fences/rope_fence_05.tscn" id="46_ctwlg"]
+[ext_resource type="PackedScene" uid="uid://bq1husq6b4kbc" path="res://world/geometry_scene/rope_fences/rope_fence_03.tscn" id="46_jms70"]
 [ext_resource type="PackedScene" uid="uid://dqiwgu1volsld" path="res://world/geometry_scene/dock_props/skeleton.tscn" id="48_uve7x"]
 [ext_resource type="PackedScene" uid="uid://x0uhmjqsikvw" path="res://world/geometry_scene/upper_floor/staircase.tscn" id="49_civ51"]
 [ext_resource type="PackedScene" uid="uid://ctm6lgpfyne0x" path="res://world/geometry_scene/door/doorframe_large_noDoors.tscn" id="50_3ndf6"]
@@ -73,6 +79,9 @@
 [ext_resource type="PackedScene" uid="uid://8vxvx48ceuwk" path="res://world/geometry_scene/dock_props/Boat_Crane/boat_crane_main.tscn" id="71_vg7cy"]
 [ext_resource type="PackedScene" uid="uid://18xuvqegxwgg" path="res://world/geometry_scene/dock/dock_lower_01.tscn" id="72_7kwc2"]
 [ext_resource type="PackedScene" uid="uid://bph57v8i0rn3n" path="res://world/geometry_scene/dock/dock_lower_04.tscn" id="73_ok71q"]
+[ext_resource type="PackedScene" uid="uid://63c5ajutlh10" path="res://world/geometry_scene/rope_fences/rope_fence_06.tscn" id="76_1u5dl"]
+[ext_resource type="PackedScene" uid="uid://cslqsggjfbojy" path="res://world/geometry_scene/rope_fences/rope_fence_07.tscn" id="81_mi6gc"]
+[ext_resource type="PackedScene" uid="uid://y3jo2aavnkyf" path="res://world/geometry_scene/rope_fences/rope_fence_04.tscn" id="82_1s1fv"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sf4n2"]
 _surfaces = [{
@@ -129,6 +138,9 @@ sky_material = SubResource("ProceduralSkyMaterial_na063")
 [sub_resource type="Environment" id="Environment_bkp3o"]
 background_mode = 2
 sky = SubResource("Sky_wpdqf")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bkp3o"]
+size = Vector3(1, 1, 25.65628)
 
 [node name="Environment" type="Node3D" unique_id=1205727231]
 
@@ -2125,6 +2137,9 @@ transform = Transform3D(1.459917, 0, 0, 0, 0.98096365, 0.19419138, 0, -0.1941913
 [node name="rock31" parent="World/Rocks" unique_id=1072748592 instance=ExtResource("8_m5jkx")]
 transform = Transform3D(0.01555185, 0, 0.99987906, 0, 1, 0, -0.99987906, 0, 0.01555185, -41.47853, -3.3476636, -6.0532374)
 
+[node name="rope_fence08" parent="World/Rocks" unique_id=1691604088 instance=ExtResource("43_vjhti")]
+transform = Transform3D(-0.056020644, 0, -0.9984296, 0, 1.044227, 0, 0.9984296, 0, -0.056020644, 11.926401, -0.89049405, 30.223898)
+
 [node name="Triangles" type="Node3D" parent="World" unique_id=452314104]
 
 [node name="triangle36" parent="World/Triangles" unique_id=381115397 instance=ExtResource("25_5kios")]
@@ -2517,18 +2532,103 @@ transform = Transform3D(-0.9999596, 0, 1.5892613e-08, 0, 0.9999596, 0, -1.589261
 
 [node name="Doorframe_large3" parent="World/Doorframes" unique_id=1371542321 instance=ExtResource("5_wpdqf")]
 transform = Transform3D(2.7818132e-08, 0, -1, 0, 1, 0, 1, 0, 2.7818132e-08, -24.652538, 0, -10)
+open = true
 
 [node name="Doorframe_small" parent="World/Doorframes" unique_id=207020057 instance=ExtResource("28_h7qof")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.203566, 0, 10)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 29.064806, 0, 10)
 
 [node name="Doorframe_small2" parent="World/Doorframes" unique_id=345654833 instance=ExtResource("28_h7qof")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.850996, 0, 0)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 21.850996, 0, 0)
 
 [node name="Doorframe_large2" parent="World/Doorframes" unique_id=173261421 instance=ExtResource("50_3ndf6")]
 transform = Transform3D(-4.3540787e-08, 0, -1, 0, 1.1699828, 0, 0.7304932, 0, -5.9604645e-08, 11.054387, 0.11565545, -7.7143564)
 
 [node name="open_door" parent="World/Doorframes" unique_id=1447299802 instance=ExtResource("62_5bxc6")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.2050511, 0, -1, 0, -4.371139e-08, 11, 5.1709204, -8.799545)
+
+[node name="rope_fence01" parent="World/Doorframes" unique_id=1273106375 instance=ExtResource("41_lnsl1")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1.044227, 0, 1, 0, -4.371139e-08, -18.051643, -0.6120218, 10.873228)
+
+[node name="rope_fence03" parent="World/Doorframes" unique_id=2092294934 instance=ExtResource("42_1u5dl")]
+transform = Transform3D(-0.016976153, 0, -0.99843705, 0, 0.9406471, 0, 1.0927175, 0, -0.015511438, -18.051643, -0.6120218, 13.635716)
+
+[node name="rope_fence08" parent="World/Doorframes" unique_id=1307663927 instance=ExtResource("43_vjhti")]
+transform = Transform3D(-4.654042e-08, 0, -1, 0, 1.1319743, 0, 1.0647207, 0, -4.371139e-08, -18.186247, -0.79548043, 26.214884)
+
+[node name="rope_fence09" parent="World/Doorframes" unique_id=667209353 instance=ExtResource("44_ctwlg")]
+transform = Transform3D(-4.461894e-08, 0, 1, -0.021034561, 0.9813094, -9.007482e-10, -1.0205456, -0.02022586, -4.3702105e-08, -17.86518, -0.53809154, 26.527615)
+
+[node name="rope_fence06" parent="World/Doorframes" unique_id=240318416 instance=ExtResource("76_1u5dl")]
+transform = Transform3D(1, 0, 0, 0, 1.044227, 0, 0, 0, 1, -20.825205, -0.60374254, 36.969643)
+
+[node name="rope_fence04" parent="World/Doorframes" unique_id=863099279 instance=ExtResource("46_jms70")]
+transform = Transform3D(-1.1511393, 0, -3.4121214e-08, 0, 1.1776973, 0, 3.4306623e-08, 0, -1.144918, -20.65714, -0.60374254, 36.558193)
+
+[node name="rope_fence07" parent="World/Doorframes" unique_id=1240211121 instance=ExtResource("46_jms70")]
+transform = Transform3D(-0.9817576, 0, -3.4121214e-08, 0, 1.1776973, 0, 2.9258656e-08, 0, -1.144918, -22.938047, -0.60374254, 36.558193)
+
+[node name="rope_fence05" parent="World/Doorframes" unique_id=523859416 instance=ExtResource("46_ctwlg")]
+transform = Transform3D(-4.990416e-08, 0, -1, 0, 1.044227, 0, 1.141674, 0, -4.371139e-08, -18.173357, -0.5647504, 29.15197)
+
+[node name="rope_fence02" parent="World/Doorframes" unique_id=187245744 instance=ExtResource("42_1u5dl")]
+transform = Transform3D(-4.7619313e-08, 0, -1, 0, 0.9828639, 0, 1.0894029, 0, -4.371139e-08, -18.25706, -0.5647504, 31.45802)
+
+[node name="rope_fence12" parent="World/Doorframes" unique_id=203043487 instance=ExtResource("43_vjhti")]
+transform = Transform3D(-4.654042e-08, 0, -1, 0, 1.1319743, 0, 1.0647207, 0, -4.371139e-08, -3.1132746, -0.99925584, 17.7315)
+
+[node name="rope_fence21" parent="World/Doorframes" unique_id=1247489045 instance=ExtResource("43_vjhti")]
+transform = Transform3D(-4.646464e-08, -0.064568646, -0.9958528, -2.6548828e-09, 1.130053, -0.05690075, 1.0647207, 0, -4.360111e-08, -7.801796, -1.232164, 25.575748)
+
+[node name="rope_fence20" parent="World/Doorframes" unique_id=1357074568 instance=ExtResource("43_vjhti")]
+transform = Transform3D(-4.654042e-08, 0, -1, 0, 1.1319743, 0, 1.0647207, 0, -4.371139e-08, -7.906147, -0.99925584, 10.272699)
+
+[node name="rope_fence13" parent="World/Doorframes" unique_id=1229482273 instance=ExtResource("44_ctwlg")]
+transform = Transform3D(-4.4371728e-08, 0, 1, -0.02091802, 1.2450973, -9.007482e-10, -1.0148913, -0.025662817, -4.3702105e-08, -2.7922068, -0.8889318, 18.044231)
+
+[node name="rope_fence14" parent="World/Doorframes" unique_id=788678000 instance=ExtResource("44_ctwlg")]
+transform = Transform3D(-4.4371728e-08, 0, 1, -0.02091802, 1.2450973, -9.007482e-10, -1.0148913, -0.025662817, -4.3702105e-08, -7.533641, -0.8889318, 18.063133)
+
+[node name="rope_fence15" parent="World/Doorframes" unique_id=864796809 instance=ExtResource("46_jms70")]
+transform = Transform3D(-1.1192045, -0.12228651, -0.2143224, -0.12084249, 1.1708506, -0.0015741957, 0.21346207, 0.021665884, -1.1246068, -3.4241009, -1.0596857, 35.1409)
+
+[node name="rope_fence18" parent="World/Doorframes" unique_id=1021906185 instance=ExtResource("46_jms70")]
+transform = Transform3D(-0.15146542, 0.0088798525, -1.1189486, -0.093297385, 1.1811693, 0.017604398, 1.3131169, 0.08494682, -0.12781768, -3.2682526, -0.93326044, 32.526817)
+
+[node name="rope_fence19" parent="World/Doorframes" unique_id=1788574941 instance=ExtResource("46_jms70")]
+transform = Transform3D(0.07437291, -0.061141703, 1.1232407, -0.016542165, 1.0724485, 0.064998895, -1.33506, -0.016694384, 0.06176775, -7.985139, -1.3696762, 35.43048)
+
+[node name="rope_fence16" parent="World/Doorframes" unique_id=675841026 instance=ExtResource("46_ctwlg")]
+transform = Transform3D(-4.990416e-08, 0, -1, 0, 1.2545736, 0, 1.141674, 0, -4.371139e-08, -3.1003847, -0.93228024, 20.668587)
+
+[node name="rope_fence17" parent="World/Doorframes" unique_id=763084880 instance=ExtResource("42_1u5dl")]
+transform = Transform3D(-4.7619313e-08, 0, -1, 0, 0.9828639, 0, 1.0894029, 0, -4.371139e-08, -3.1840868, -0.8102007, 22.974636)
+
+[node name="rope_fence22" parent="World/Doorframes" unique_id=496609821 instance=ExtResource("42_1u5dl")]
+transform = Transform3D(-4.763409e-08, 0, -1, 0.0026846065, 1.063207, -1.0768453e-10, 1.0897377, -0.0026192458, -4.3711246e-08, -7.7786217, -1.0719249, 20.485783)
+
+[node name="rope_fence10" parent="World/Doorframes" unique_id=206933712 instance=ExtResource("76_1u5dl")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1.044227, 0, 1, 0, -4.371139e-08, -3.2630863, -0.89342725, 27.837822)
+
+[node name="rope_fence23" parent="World/Doorframes" unique_id=703804790 instance=ExtResource("43_vjhti")]
+transform = Transform3D(-4.9637766e-08, 0, -1.1000855, 0.0865817, 1.1231062, -3.6663137e-09, 1.1322742, -0.08588067, -4.7946294e-08, 11.983147, -0.99925584, 10.37225)
+
+[node name="rope_fence25" parent="World/Doorframes" unique_id=1254916462 instance=ExtResource("46_ctwlg")]
+transform = Transform3D(-4.9794284e-08, 5.380954e-16, -1, -0.05670785, 1.2529523, 2.1759696e-09, 1.137748, 0.062449876, -4.3657188e-08, 11.996037, -0.5981129, 13.438566)
+
+[node name="rope_fence28" parent="World/Doorframes" unique_id=1341034682 instance=ExtResource("46_ctwlg")]
+transform = Transform3D(-4.9794284e-08, 5.380954e-16, -1, -0.05670785, 1.2529523, 2.1759696e-09, 1.137748, 0.062449876, -4.3657188e-08, 7.0219927, -0.65134907, 13.596533)
+
+[node name="rope_fence26" parent="World/Doorframes" unique_id=20688717 instance=ExtResource("42_1u5dl")]
+transform = Transform3D(-4.758292e-08, 0, -1, -0.01880989, 1.118365, 7.5530837e-10, 1.0884079, 0.01932761, -4.3704862e-08, 12.033462, -0.64472926, 15.615385)
+
+[node name="rope_fence27" parent="World/Doorframes" unique_id=1434706778 instance=ExtResource("76_1u5dl")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1.044227, 0, 1, 0, -4.371139e-08, 11.833335, -0.752487, 20.47857)
+
+[node name="rope_fence11" parent="World/Doorframes" unique_id=1606242702 instance=ExtResource("76_1u5dl")]
+transform = Transform3D(0.00018414936, -0.00020550989, -0.99999213, -0.00071948994, 1.1601095, -0.00017728095, 0.9999679, 0.0008347527, 0.00018402343, -7.8886347, -1.036051, 17.853449)
+
+[node name="rope_fence24" parent="World/Doorframes" unique_id=425787722 instance=ExtResource("41_lnsl1")]
+transform = Transform3D(-5.1328573e-08, 0, 1.0702512, 0, 1.044227, 0, -1.1742609, 0, -4.6782166e-08, 7.309164, -0.5519689, 13.8399315)
 
 [node name="Dock" type="Node3D" parent="World" unique_id=1104138544]
 
@@ -2548,7 +2648,7 @@ transform = Transform3D(0.0757657, 0, 0.9971256, 0, 1, 0, -0.9971256, 0, 0.07576
 transform = Transform3D(-4.3701913e-08, 0.02082198, 0.9997832, 9.101576e-10, 0.9997832, -0.02082198, -1, 0, -4.371139e-08, 9.447975, -4.3057647, 30.811495)
 
 [node name="dock_stairs" parent="World/Dock" unique_id=863793928 instance=ExtResource("13_5pvp5")]
-transform = Transform3D(-4.371139e-08, 0, -1.1933012, 0, 1, 0, 1, 0, -5.2160853e-08, 9.90569, -0.8185346, 10.994451)
+transform = Transform3D(-4.371139e-08, 0, -1.1933012, 0, 1, 0, 1, 0, -5.2160853e-08, 9.90569, -0.8587761, 10.994451)
 
 [node name="dock_main06" parent="World/Dock" unique_id=800784310 instance=ExtResource("12_pdpkf")]
 transform = Transform3D(-4.87545e-08, -0.10523839, 0.9938975, 0.08110923, 0.9871309, 0.105405726, -1.1187243, 0.07156853, 0.0076420354, -5.3855033, -4.71367, 33.38726)
@@ -2784,7 +2884,7 @@ transform = Transform3D(-1, 0, -8.742278e-08, 8.742278e-08, 2.9802322e-08, -1, 1
 [node name="Decorations" type="Node3D" parent="World" unique_id=1070403852]
 
 [node name="Water" type="MeshInstance3D" parent="World/Decorations" unique_id=74992622]
-transform = Transform3D(150, 0, 0, 0, 150, 0, 0, 0, 150, 0, -2.730938, 150)
+transform = Transform3D(150, 0, 0, 0, 150, 0, 0, 0, 150, -0.0125694275, -2.730939, 150.05406)
 material_override = SubResource("StandardMaterial3D_l4wpc")
 mesh = SubResource("PlaneMesh_bkp3o")
 
@@ -2858,4 +2958,92 @@ transform = Transform3D(1.196298, 0, 0, 0, 1, 0, 0, 0, 1, 21.761646, -4.9605494,
 environment = SubResource("Environment_bkp3o")
 
 [node name="Player" parent="." unique_id=1650951866 instance=ExtResource("2_wpdqg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.875946, 0, 5.694454)
+
+[node name="rope_fence06" parent="." unique_id=1513050147 instance=ExtResource("76_1u5dl")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1.044227, 0, 1, 0, -4.371139e-08, -18.107986, -0.7223851, 18.766773)
+
+[node name="rope_fence07" parent="." unique_id=594684350 instance=ExtResource("76_1u5dl")]
+transform = Transform3D(-0.16301005, 0, -0.9866244, 0, 1.044227, 0, 0.9866244, 0, -0.16301005, -2.691976, -0.77459025, 10.28339)
+
+[node name="rope_fence05" parent="." unique_id=239173131 instance=ExtResource("46_ctwlg")]
+transform = Transform3D(-4.3626383e-08, 0, -1, -0.043886445, 1.0431743, 1.9220754e-09, 0.99709, 0.045914825, -4.366911e-08, -3.2575355, -0.69981384, 30.494556)
+
+[node name="rope_fence09" parent="." unique_id=1075761007 instance=ExtResource("46_ctwlg")]
+transform = Transform3D(-5.0008573e-08, 0, -1.0291951, -0.050306685, 1.0498912, 1.9781905e-09, 1.1429564, 0.046210468, -4.4944034e-08, 11.896549, -0.6893736, 23.288767)
+
+[node name="rope_fence03" parent="." unique_id=1673568797 instance=ExtResource("46_jms70")]
+transform = Transform3D(-1.2270029, -0.10952671, 0.1486181, -0.118929885, 1.1299897, 0.014405127, -0.13153574, -4.2217576e-09, -1.3993767, -5.6528335, -1.3088387, 35.506912)
+
+[node name="rope_fence02" parent="." unique_id=1755052323 instance=ExtResource("42_1u5dl")]
+transform = Transform3D(0.106835745, -0.0911614, 0.9972857, 0.046534866, 1.069473, 0.079908825, -0.89961934, 0.04449492, 0.12256774, -7.8111486, -1.4250515, 32.676895)
+
+[node name="rope_fence10" parent="." unique_id=762465717 instance=ExtResource("44_ctwlg")]
+transform = Transform3D(0.014976256, 0, -0.9998878, 0, 0.9515387, 0, 0.9998878, 0, 0.014976256, 11.93807, -0.7386777, 25.558214)
+
+[node name="rope_fence08" parent="." unique_id=1397928324 instance=ExtResource("46_ctwlg")]
+transform = Transform3D(-1, 0, -8.940697e-08, 0, 1.044227, 0, 8.940697e-08, 0, -1, 11.859808, -0.68732536, 32.771545)
+
+[node name="rope_fence04" parent="." unique_id=82749255 instance=ExtResource("46_jms70")]
+transform = Transform3D(-1.2397928, 0, 1.5856726e-07, 0, 1.044227, 0, -1.4779482e-07, 0, -1.3301586, 9.795005, -0.6833292, 32.746414)
+
+[node name="rope_fence11" parent="." unique_id=856488256 instance=ExtResource("46_ctwlg")]
+transform = Transform3D(-0.15869282, -0.0058751726, 0.98727196, -0.035322223, 1.0435457, -1.546403e-09, -0.9851102, -0.036471054, -0.15904106, 7.4783373, -0.6146025, 32.80664)
+
+[node name="rope_fence12" parent="." unique_id=1370392988 instance=ExtResource("81_mi6gc")]
+transform = Transform3D(0.049838707, 0, 0.9987573, 0, 1.044227, 0, -0.9987573, 0, 0.049838707, 7.329591, -0.8339305, 25.699732)
+
+[node name="rope_fence13" parent="." unique_id=1181486262 instance=ExtResource("82_1s1fv")]
+transform = Transform3D(-4.3664755e-08, 0, 1, -0.024095362, 1.0439104, -1.0543665e-09, -0.99864256, -0.025187587, -4.369867e-08, 7.268572, -0.83003086, 30.810305)
+
+[node name="rope_fence14" parent="." unique_id=727534028 instance=ExtResource("42_1u5dl")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1.044227, 0, -1, 0, -4.371139e-08, 7.4130363, -0.7532005, 22.9047)
+
+[node name="rope_fence15" parent="." unique_id=166485701 instance=ExtResource("46_ctwlg")]
+transform = Transform3D(2.9802322e-08, 0, -1, 0, 1.044227, 0, 1, 0, 2.9802322e-08, 7.0679007, -0.6005583, 16.038734)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=259769830]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=959652325]
+transform = Transform3D(0.23039764, 0, -0.03338478, 0, 1.8011183, 0, 0.007696065, 0, 0.9994425, -2.92134, 2.0746393, 23.112381)
+shape = SubResource("BoxShape3D_bkp3o")
+debug_color = Color(0.97854775, 0, 0.39908174, 0.41960785)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" unique_id=196522257]
+transform = Transform3D(0.23052615, 0, 0, 0, 1.8011184, 0, 0, 0, 1, 7.0868883, 2.0746393, 23.112381)
+shape = SubResource("BoxShape3D_bkp3o")
+debug_color = Color(0.97854775, 0, 0.39908174, 0.41960785)
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D" unique_id=1525606042]
+transform = Transform3D(0.23052615, 0, 0, 0, 1.8011184, 0, 0, 0, 1, 12.345445, 2.0746393, 23.112381)
+shape = SubResource("BoxShape3D_bkp3o")
+debug_color = Color(0.97854775, 0, 0.39908174, 0.41960785)
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="StaticBody3D" unique_id=1483853275]
+transform = Transform3D(1.117587e-08, 0, 0.22820362, 0, 1.8011183, 0, -0.23052612, 0, 3.4004997e-09, 9.604257, 2.0746393, 32.983803)
+shape = SubResource("BoxShape3D_bkp3o")
+debug_color = Color(0.97854775, 0, 0.39908174, 0.41960785)
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="StaticBody3D" unique_id=271453257]
+transform = Transform3D(1.117587e-08, 0, 0.1992336, 0, 1.8011183, 0, -0.23052612, 0, 2.9688125e-09, -5.8829236, 2.0746393, 35.769234)
+shape = SubResource("BoxShape3D_bkp3o")
+debug_color = Color(0.97854775, 0, 0.39908174, 0.41960785)
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="StaticBody3D" unique_id=1321606596]
+transform = Transform3D(1.1175871e-08, 0, 0.26975173, 0, 1.8011183, 0, -0.23052615, 0, 4.0196144e-09, -21.509731, 2.0746393, 36.758064)
+shape = SubResource("BoxShape3D_bkp3o")
+debug_color = Color(0.97854775, 0, 0.39908174, 0.41960785)
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D" unique_id=1205808283]
+transform = Transform3D(0.23052615, 0, 0, 0, 1.8011184, 0, 0, 0, 1.035285, -17.901777, 2.0746393, 23.537102)
+shape = SubResource("BoxShape3D_bkp3o")
+debug_color = Color(0.97854775, 0, 0.39908174, 0.41960785)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=31612926]
+transform = Transform3D(0.2304843, 0, -0.01904974, 0, 1.8011183, 0, 0.004391463, 0, 0.9998185, -7.8846083, 1.712048, 23.193684)
+shape = SubResource("BoxShape3D_bkp3o")
+debug_color = Color(0.97854775, 0, 0.39908174, 0.41960785)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=80609059]
+collision_layer = 3855
+collision_mask = 3855

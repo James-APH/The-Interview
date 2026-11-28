@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://dth3yhu0olfkd"]
 
-[ext_resource type="PackedScene" uid="uid://dlkxtoggsme1h" path="res://environment/geometry_src/door/Doorframe_lower.fbx" id="1_8ij28"]
-[ext_resource type="Material" uid="uid://2mftbm65irbf" path="res://environment/materials/warehouse02_mat.tres" id="2_8bat5"]
+[ext_resource type="PackedScene" uid="uid://dlkxtoggsme1h" path="res://world/geometry_src/door/Doorframe_lower.fbx" id="1_8ij28"]
+[ext_resource type="Material" uid="uid://2mftbm65irbf" path="res://world/materials/warehouse02_mat.tres" id="2_8bat5"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4nsmi"]
+points = PackedVector3Array(-2.8770154, -0.0126690315, -0.25763032, -2.8770154, -0.0126690315, 0.25763062, -2.8398566, 0.0126690315, -0.21924803, 2.8747113, -0.0126690315, -0.25763032, 2.8747113, -0.0126690315, 0.25763062, -2.8398566, 0.0126690315, 0.21707955, 2.8392417, 0.0126690315, -0.21924803, 2.8392417, 0.0126690315, 0.21707955)
 
 [node name="Doorframe_lower" unique_id=1995083481 instance=ExtResource("1_8ij28")]
 
-[node name="Doorframe_lower" parent="." index="0" unique_id=1558162279]
+[node name="Doorframe_lower" parent="." index="0" unique_id=1633576826]
 surface_material_override/0 = ExtResource("2_8bat5")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Doorframe_lower" index="0" unique_id=1496969680]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Doorframe_lower/StaticBody3D" index="0" unique_id=1153139856]
+shape = SubResource("ConvexPolygonShape3D_4nsmi")

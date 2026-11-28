@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://d3mncwd3m5nvf"]
+
+[ext_resource type="PackedScene" uid="uid://btv2n56m81oi8" path="res://world/geometry_src/Rubble/rubble01/rubble01.fbx" id="1_358gk"]
+[ext_resource type="Shader" uid="uid://dywwrg62f8j8p" path="res://world/materials/rubble_shader.gdshader" id="2_jtgbt"]
+[ext_resource type="Texture2D" uid="uid://bua7gbnc0nl17" path="res://world/textures/Rubble/rubble01/col.jpg" id="3_ap1e7"]
+[ext_resource type="Texture2D" uid="uid://dkfmjbhpw6o66" path="res://world/textures/Rubble/rubble01/AO.jpg" id="4_tceng"]
+[ext_resource type="Texture2D" uid="uid://cgb0ppwb6a2n" path="res://world/textures/Rubble/rubble01/normal.jpg" id="5_a1cuf"]
+[ext_resource type="Texture2D" uid="uid://cs0fpmc5s1q7c" path="res://world/textures/Rubble/rubble01/Roughness.jpg" id="6_k5aiw"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qiiu1"]
+render_priority = 0
+shader = ExtResource("2_jtgbt")
+shader_parameter/albedo_tint = Color(1, 1, 1, 1)
+shader_parameter/albedo_texture = ExtResource("3_ap1e7")
+shader_parameter/saturation = 1.0
+shader_parameter/ao_texture = ExtResource("4_tceng")
+shader_parameter/ao_light_affect = 1.0
+shader_parameter/roughness_texture = ExtResource("6_k5aiw")
+shader_parameter/roughness = 1.0
+shader_parameter/metallic = 0.0
+shader_parameter/normal_texture = ExtResource("5_a1cuf")
+shader_parameter/normal_scale = 1.0
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_358gk"]
+points = PackedVector3Array(-1.1055847, -0.0010078583, -0.0024015643, -1.1120219, -0.0010078583, 0.20879728, -1.0042268, 0.06621245, -0.0024015643, 0.0024796724, 0.163263, -0.0024015643, 0.0024796724, -0.0010078583, 0.31492794, -1.1001295, -0.0010078583, 0.30507043, -1.0879098, 0.013277275, 0.28990045, -0.87788385, 0.12369662, -0.0024015643, -0.14884818, 0.15745404, -0.0024015643, -0.05043602, 0.1661593, 0.011115634, -0.087858796, 0.16489932, 0.05479566, 0.0024796724, 0.15483591, 0.055740096, 0.002588749, 0.014389977, 0.30595583, 0.002588749, 0.014733605, 0.29710177, -0.043998837, -0.0010078583, 0.40588865, -1.0814726, -0.0010078583, 0.39302075, -1.0648888, 0.008286478, 0.400104, -0.9026506, 0.10204801, 0.14245085, -0.9165068, 0.09830082, 0.12621841, -0.87122846, 0.121929385, 0.058337286, -0.844607, 0.1329255, 0.033604946, -0.8401337, 0.13220552, 0.013830878, -0.43022847, 0.011297319, 0.5902892, -0.027960539, 0.13614906, 0.14947508, -0.81667626, 0.12930922, 0.082361296, -0.8137305, 0.12669109, 0.108746395, -0.81438506, 0.11756039, 0.18477327, -0.7952918, 0.10510794, 0.24716488, -0.6299986, 0.10093531, 0.26853266, 0.0024796724, 0.14079623, 0.10355201, 0.0024796724, 0.08265754, 0.22438042, -0.04061663, 0.009644629, 0.3905416, -0.06232834, -0.0010078583, 0.42766964, -1.0543057, -0.0010078583, 0.4398292, -1.0558331, 0.0061101634, 0.42395094, -0.45423144, -0.0010078583, 0.6006189, -0.37251222, -0.0010078583, 0.5932405, -0.34414506, -0.0010078583, 0.5887545, -0.33061612, -0.0010078583, 0.5862163, -0.34403598, 0.0057338085, 0.57866085, -0.14459312, 0.019298958, 0.49224523, -0.85529923, 0.00539018, 0.5591819, 0.0011703968, 0.11196415, 0.17650947, -0.99124336, 0.0007757379, 0.49968264, -0.9060328, 0.0066501517, 0.5404703, -0.12026286, -0.0010078583, 0.47925928, -1.0220108, -0.0010078583, 0.47199896, -0.8723195, -0.0010078583, 0.56189716, -0.2724635, -0.0010078583, 0.56839013, -0.27464557, 0.0062410696, 0.55747014, -0.2282762, -0.0010078583, 0.54814386, -0.15844935, 0.011804581, 0.50458187, -0.91977996, -0.0010078583, 0.5479077, -0.96942246, -0.0010078583, 0.5196928, -0.13564658, -0.0010078583, 0.4902383, -0.16041327, -0.0010078583, 0.5074152)
+
+[node name="rubble01" unique_id=1654155359 instance=ExtResource("1_358gk")]
+
+[node name="xettfis_LOD0_TIER3_000" parent="world_root" parent_id_path=PackedInt32Array(670890952) index="0" unique_id=279584578]
+surface_material_override/0 = SubResource("ShaderMaterial_qiiu1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="world_root/xettfis_LOD0_TIER3_000" index="0" unique_id=494071649]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="world_root/xettfis_LOD0_TIER3_000/StaticBody3D" index="0" unique_id=1950092668]
+shape = SubResource("ConvexPolygonShape3D_358gk")

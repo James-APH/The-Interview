@@ -1,11 +1,50 @@
 [gd_scene format=3 uid="uid://bxcjaf2ldmgup"]
 
-[ext_resource type="PackedScene" uid="uid://bo0ku1yugt4hf" path="res://environment/geometry_src/objects/storage_crate03.fbx" id="1_ysnjd"]
-[ext_resource type="Material" uid="uid://bkd35irg7723h" path="res://environment/materials/warehouse02_red_mat.tres" id="2_ysnjd"]
-[ext_resource type="Material" uid="uid://dwblipa5mhc8p" path="res://environment/materials/warehouse_red_mat.tres" id="3_2oaye"]
+[ext_resource type="PackedScene" uid="uid://bo0ku1yugt4hf" path="res://world/geometry_src/objects/storage_crate03.fbx" id="1_ysnjd"]
+[ext_resource type="Material" uid="uid://bkd35irg7723h" path="res://world/materials/warehouse02_red_mat.tres" id="2_ysnjd"]
+[ext_resource type="Material" uid="uid://dwblipa5mhc8p" path="res://world/materials/warehouse_red_mat.tres" id="3_2oaye"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ahujc"]
+resource_local_to_scene = true
+size = Vector3(2.7838135, 0.15499878, 7.107361)
 
 [node name="storage_crate03" unique_id=598165255 instance=ExtResource("1_ysnjd")]
 
-[node name="storage_crate03" parent="." index="0" unique_id=2024239669]
+[node name="storage_crate03" parent="." index="0" unique_id=1616691177]
 surface_material_override/0 = ExtResource("2_ysnjd")
 surface_material_override/1 = ExtResource("3_2oaye")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=1531575279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.3280456)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1273686323]
+transform = Transform3D(0.927, 0, 0, 0, 1, 0, 0, 0, 1.0011154, 0.0017089844, 2.7230916, 0.32758284)
+shape = SubResource("BoxShape3D_ahujc")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D" index="1" unique_id=501398160]
+transform = Transform3D(0.9270039, 0, 0, 0, 1, 0, 0, 0, 1.0011154, 0.0017089844, 0.058450103, 0.32758284)
+shape = SubResource("BoxShape3D_ahujc")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="2" unique_id=1606288351]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1.0011154, 1.1932805, 1.4043889, 0.32758284)
+shape = SubResource("BoxShape3D_ahujc")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" index="3" unique_id=1809778163]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1.0011154, -1.1812521, 1.4043889, 0.32758284)
+shape = SubResource("BoxShape3D_ahujc")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="StaticBody3D" index="4" unique_id=135340433]
+transform = Transform3D(-1.6739298e-08, -0.7212727, 0.11954678, -0.9026597, -1.4041423e-08, -7.1444433e-09, 3.572971e-08, -0.69265103, -0.12448666, 1.6820419, 1.4197423, -3.7047706)
+shape = SubResource("BoxShape3D_ahujc")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="StaticBody3D" index="5" unique_id=1300604013]
+transform = Transform3D(3.4864666e-08, -0.72723216, -0.11846643, -0.9026597, -1.4041424e-08, -7.1444433e-09, 1.8473534e-08, 0.68639165, -0.12551522, -1.6584976, 1.4197423, -3.6753635)
+shape = SubResource("BoxShape3D_ahujc")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="StaticBody3D" index="6" unique_id=472519522]
+transform = Transform3D(1.6681703e-08, 0.7223881, -0.11934602, -0.90265983, -1.4041429e-08, -7.1444437e-09, -3.5756646e-08, 0.6914881, 0.12467919, -1.6584976, 1.4197423, 4.3243594)
+shape = SubResource("BoxShape3D_ahujc")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="StaticBody3D" index="7" unique_id=802607198]
+transform = Transform3D(-3.505662e-08, 0.7199893, 0.11977713, -0.9026598, -1.4041425e-08, -7.144443e-09, -1.8106645e-08, -0.6939856, 0.12426513, 1.6643715, 1.4197423, 4.3243594)
+shape = SubResource("BoxShape3D_ahujc")

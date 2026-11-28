@@ -1,11 +1,19 @@
 [gd_scene format=3 uid="uid://cosh5cdujncma"]
 
-[ext_resource type="PackedScene" uid="uid://uduij24p5em5" path="res://environment/geometry_src/objects/scaffold_tri.fbx" id="1_gkmdq"]
-[ext_resource type="Material" uid="uid://odsmrhjfbmvp" path="res://environment/materials/warehouse_transparent_mat.tres" id="2_4mf3q"]
-[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="3_qr45v"]
+[ext_resource type="PackedScene" uid="uid://uduij24p5em5" path="res://world/geometry_src/objects/scaffold_tri.fbx" id="1_gkmdq"]
+[ext_resource type="Material" uid="uid://odsmrhjfbmvp" path="res://world/materials/warehouse_transparent_mat.tres" id="2_4mf3q"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://world/materials/warehouse_mat.tres" id="3_qr45v"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kkfjb"]
+points = PackedVector3Array(0.3969403, -0.32741123, 3.2919242, 0.33042097, -0.21228208, 3.2919242, -0.26211375, -0.33758911, 3.2919242, 0.3969403, -0.32741123, -3.2925684, 0.004352033, 0.33758846, 3.2919242, 0.33042097, -0.21228208, -3.2925684, -0.3969397, -0.33758911, 3.2919242, -0.26211375, -0.33758911, -3.2925684, -0.3304981, -0.22252607, 3.2919242, 0.004352033, 0.33758846, -3.2925684, -0.3969397, -0.33758911, -3.2925684, -0.3304981, -0.22252607, -3.2925684)
 
 [node name="scaffold_tri" unique_id=654935682 instance=ExtResource("1_gkmdq")]
 
-[node name="scaffold_tri" parent="." index="0" unique_id=529416750]
+[node name="scaffold_tri" parent="." index="0" unique_id=1129730537]
 surface_material_override/0 = ExtResource("2_4mf3q")
 surface_material_override/1 = ExtResource("3_qr45v")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="scaffold_tri" index="0" unique_id=2054386277]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="scaffold_tri/StaticBody3D" index="0" unique_id=269823143]
+shape = SubResource("ConvexPolygonShape3D_kkfjb")

@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://35us3rse4gm1"]
 
-[ext_resource type="PackedScene" uid="uid://cjvre6wt12axc" path="res://environment/geometry_src/objects/scaffold02.fbx" id="1_k4547"]
-[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_vnfx2"]
+[ext_resource type="PackedScene" uid="uid://cjvre6wt12axc" path="res://world/geometry_src/objects/scaffold02.fbx" id="1_k4547"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://world/materials/warehouse_mat.tres" id="2_vnfx2"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_b625p"]
+points = PackedVector3Array(-0.37379944, -0.4376245, -3.2925696, 0.3737266, -0.4376245, -3.2925696, -0.37379944, -0.4376245, 3.2925696, -0.37379944, 0.4376251, -3.2925696, 0.3737266, 0.4376251, -3.2925696, 0.3737266, -0.4376245, 3.2925696, -0.37379944, 0.4376251, 3.2925696, 0.3737266, 0.4376251, 3.2925696)
 
 [node name="scaffold02" unique_id=2011073614 instance=ExtResource("1_k4547")]
 
-[node name="scaffold02" parent="." index="0" unique_id=1807016632]
+[node name="scaffold02" parent="." index="0" unique_id=190529443]
 surface_material_override/0 = ExtResource("2_vnfx2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="scaffold02" index="0" unique_id=1065972059]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="scaffold02/StaticBody3D" index="0" unique_id=469407669]
+shape = SubResource("ConvexPolygonShape3D_b625p")

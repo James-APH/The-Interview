@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://dmre3bq3cucyl"]
 
-[ext_resource type="PackedScene" uid="uid://cd5pxobmh18cn" path="res://environment/geometry_src/objects/massive_beam.fbx" id="1_vwxcn"]
-[ext_resource type="Material" uid="uid://b7drixualalnc" path="res://environment/materials/warehouse02_mat_no_parralax.tres" id="2_6ldta"]
+[ext_resource type="PackedScene" uid="uid://cd5pxobmh18cn" path="res://world/geometry_src/objects/massive_beam.fbx" id="1_vwxcn"]
+[ext_resource type="Material" uid="uid://b7drixualalnc" path="res://world/materials/warehouse02_mat_no_parralax.tres" id="2_6ldta"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0br4t"]
+points = PackedVector3Array(-1, 0, -0.6940094, -1, 0, 0.6938137, -1, 8.8120775, -0.6940094, -0.6940094, 0, -1, -0.6940094, 0, 1, -1, 8.8120775, 0.6938137, -0.6940094, 8.8120775, -1, 0.6938137, 0, -1, 0.6938137, 0, 1, -0.6940094, 8.8120775, 1, 0.6938137, 8.8120775, -1, 1, 0, -0.6940094, 1, 0, 0.6938137, 0.6938137, 8.8120775, 1, 1, 8.8120775, -0.6940094, 1, 8.8120775, 0.6938137)
 
 [node name="massive_beam" unique_id=1692534233 instance=ExtResource("1_vwxcn")]
 
-[node name="massive_beam" parent="." index="0" unique_id=1273888319]
+[node name="massive_beam" parent="." index="0" unique_id=1968168211]
 surface_material_override/0 = ExtResource("2_6ldta")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="massive_beam" index="0" unique_id=270056263]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="massive_beam/StaticBody3D" index="0" unique_id=25018725]
+shape = SubResource("ConvexPolygonShape3D_0br4t")

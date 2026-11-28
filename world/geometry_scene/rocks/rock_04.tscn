@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://bsopw215nr7af"]
 
-[ext_resource type="PackedScene" uid="uid://tlyxcy56qjfy" path="res://environment/geometry_src/rocks/rock04.FBX" id="1_frelo"]
-[ext_resource type="Shader" uid="uid://dbf7d5mhr3605" path="res://environment/geometry_scene/rocks/rocks_shader.gdshader" id="2_mljnl"]
-[ext_resource type="Texture2D" uid="uid://bhsv5541fkx6y" path="res://environment/textures/rock04/T_ubhubhyda_2K_B.PNG" id="3_d4vfe"]
-[ext_resource type="Texture2D" uid="uid://cltdvyv6ks2bs" path="res://environment/textures/rock04/T_ubhubhyda_2K_N.PNG" id="4_4t5k3"]
-[ext_resource type="Texture2D" uid="uid://by8xa7888mn7k" path="res://environment/textures/rock04/T_ubhubhyda_2K_ORM.PNG" id="5_6upkx"]
+[ext_resource type="PackedScene" uid="uid://tlyxcy56qjfy" path="res://world/geometry_src/rocks/rock04.FBX" id="1_frelo"]
+[ext_resource type="Shader" uid="uid://dbf7d5mhr3605" path="res://world/materials/rocks_shader.gdshader" id="2_mljnl"]
+[ext_resource type="Texture2D" uid="uid://bhsv5541fkx6y" path="res://world/textures/rock04/T_ubhubhyda_2K_B.PNG" id="3_d4vfe"]
+[ext_resource type="Texture2D" uid="uid://cltdvyv6ks2bs" path="res://world/textures/rock04/T_ubhubhyda_2K_N.PNG" id="4_4t5k3"]
+[ext_resource type="Texture2D" uid="uid://by8xa7888mn7k" path="res://world/textures/rock04/T_ubhubhyda_2K_ORM.PNG" id="5_6upkx"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_s5ylu"]
 render_priority = 0
@@ -21,7 +21,15 @@ shader_parameter/normal_scale = 1.421000827497501
 shader_parameter/uv_scale = Vector2(1, 1)
 shader_parameter/uv_offset = Vector2(0, 0)
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vus14"]
+points = PackedVector3Array(-2.7313852, -1.5374146, 11.345993, -3.193991, -1.7334948, 11.338097, -4.034995, -10.227912, 11.038055, -1.2167244, -3.7039871, 11.058358, -1.5162458, 7.816369, 11.008728, -1.9191604, 11.0166025, 10.966992, -5.050809, -10.024569, 10.957969, -4.5540943, -10.644281, 11.01888, -2.2122862, 11.251414, 10.943305, -2.939238, 11.805768, 10.694022, -3.6427398, 12.289918, 10.361269, -4.4283166, -10.949296, 10.943305, -4.034995, -10.942034, 10.80118, -2.4201388, -11.389873, 9.8311205, -2.431864, -10.900881, 9.989037, 1.0515356, -8.3929825, 7.4894404, 1.7912784, 3.2508316, 9.193813, 1.3542542, 3.3863935, 9.537847, -1.732626, 11.641156, 10.6522875, -2.430798, 11.902596, 10.807948, -6.0708866, -10.554713, 10.398493, -5.47291, -11.481861, 10.777493, -2.467039, 11.984902, 10.738013, -3.6224873, 12.36254, 10.2608795, -3.676849, 11.975221, 10.33871, -4.726772, -11.610161, 10.59476, -2.720726, -11.644052, 9.687867, -2.9307106, -11.924858, 9.45776, -0.59742975, -11.4310255, 7.5774226, 0.8298259, -10.072984, 6.8690534, 0.6102481, -9.99794, 7.188271, 1.2540588, -9.3564415, 6.74836, 1.278575, -8.697997, 7.025842, 2.1494246, 2.573022, 8.459501, 2.6013708, 2.4665089, 7.664277, 2.712226, 5.8168287, 7.0292263, 1.2231474, 8.837926, 7.6845803, 1.0526013, 9.956313, 7.2954288, -1.5215755, 11.583058, 10.264263, -1.768867, 11.7670355, 10.4402275, 0.6102481, -12.268605, 0.76331705, -5.857704, -11.150218, 10.523698, -2.8369105, 11.832395, 7.178119, -1.4320388, 11.028707, 4.0141454, -1.2817454, 10.958505, 3.733279, 0.43010902, -12.367856, 1.7435286, 2.5171642, 10.88104, 1.0272636, 1.7646303, 11.086804, 1.6972816, -3.39758, 12.321387, 9.540102, 0.16789484, -12.307337, 3.0790527, -0.028233051, -12.254081, 3.6441689, -2.0577288, -11.920017, 8.258721, -1.1389132, -11.796558, 7.313476, 0.30326557, -11.782034, 4.8308, 2.5843163, -11.985377, -0.027394444, 0.72430086, -11.462495, 4.977437, 1.1453357, -11.179267, 4.9548774, 2.5512733, -8.434135, 4.6187406, 2.7292805, -8.112175, 4.483383, 2.2847958, -8.119437, 5.364333, 3.187623, -11.22284, -0.044314086, 2.7005014, 2.318843, 7.4386816, 4.789688, 6.0177507, -0.09845696, 3.0980864, 6.615676, 5.6169996, 2.362607, 8.6249, 6.0095353, 4.0542088, 9.779599, -0.11199268, 2.4020452, 8.971066, 5.554961, 3.4445076, 10.363, 0.018852592, 2.813488, 10.757583, 0.6550313, 1.1591926, -12.309758, 0.10119489, 1.4427252, -12.367856, -0.02965039, -3.2334297, 12.210032, 8.919715, 0.4770093, 11.086804, 2.4000108, 0.0026783943, 11.048072, 2.6425257, -0.39490652, 11.091645, 3.1162758, 1.9266491, -12.307337, -0.04769802, 3.6342392, -9.847854, -0.065745644, 4.555187, -2.1062908, -0.10522482, 4.808874, 3.466279, -0.12101649, 4.818467, 4.4733114, -0.12440042, 4.6767015, 8.01003, -0.07364148, 4.448596, 8.784669, -0.07928136, 4.5082874, 1.8129053, -0.17741531, 3.1599092, 10.559081, 0.24444789, 0.1700263, 10.682538, 2.4767132, 4.194909, -4.7207026, -0.11312065, 4.5050898, 0.977746, -0.1683915, 4.7140083, 2.8054132, -0.14132006)
+
 [node name="rock04" unique_id=1419246696 instance=ExtResource("1_frelo")]
 
-[node name="Quarry_Cliff_ubhubhyda_Mid" parent="." index="0" unique_id=446644628]
+[node name="Quarry_Cliff_ubhubhyda_Mid" parent="." index="0" unique_id=1362148250]
 surface_material_override/0 = SubResource("ShaderMaterial_s5ylu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Quarry_Cliff_ubhubhyda_Mid" index="0" unique_id=301820709]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Quarry_Cliff_ubhubhyda_Mid/StaticBody3D" index="0" unique_id=393986186]
+shape = SubResource("ConvexPolygonShape3D_vus14")

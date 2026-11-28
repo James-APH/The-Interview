@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://bh7lydbqbagyl"]
 
-[ext_resource type="PackedScene" uid="uid://cdjqup3txhko1" path="res://environment/geometry_src/roof/triangle03.fbx" id="1_lpgmx"]
-[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_lit3e"]
+[ext_resource type="PackedScene" uid="uid://cdjqup3txhko1" path="res://world/geometry_src/roof/triangle03.fbx" id="1_lpgmx"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://world/materials/warehouse_mat.tres" id="2_lit3e"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_clgio"]
+points = PackedVector3Array(-0.00019621849, 1.3298298, 0, -2.004475, 0, 0, -0.00019621849, 0, 0)
 
 [node name="triangle03" unique_id=2122712437 instance=ExtResource("1_lpgmx")]
 
-[node name="triangle03" parent="." index="0" unique_id=684757414]
+[node name="triangle03" parent="." index="0" unique_id=1169161602]
 surface_material_override/0 = ExtResource("2_lit3e")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="triangle03" index="0" unique_id=1741252512]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="triangle03/StaticBody3D" index="0" unique_id=460335585]
+shape = SubResource("ConvexPolygonShape3D_clgio")

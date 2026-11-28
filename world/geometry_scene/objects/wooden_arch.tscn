@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://txj8h81mieia"]
 
-[ext_resource type="PackedScene" uid="uid://dod2a2aodc235" path="res://environment/geometry_src/objects/wooden_arch.fbx" id="1_t515f"]
-[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_idl7w"]
+[ext_resource type="PackedScene" uid="uid://dod2a2aodc235" path="res://world/geometry_src/objects/wooden_arch.fbx" id="1_t515f"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://world/materials/warehouse_mat.tres" id="2_idl7w"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ugaf2"]
+points = PackedVector3Array(-0.11971454, -1.2329847, 0, -0.16407348, -0.12020874, 0, 0.11968242, -1.2329847, 0, -0.16407348, -0.12020874, 2.9427483, -0.16407348, 0, 0, 0.16404139, -0.12020874, 0, 0.16404139, -0.12020874, 2.9424603, -0.16407348, 0, 2.9427483, 0.16404139, 0, 0, 0.16404139, 0, 2.9424603)
 
 [node name="wooden_arch" unique_id=1733167045 instance=ExtResource("1_t515f")]
 
-[node name="wooden_arch" parent="." index="0" unique_id=1614290482]
+[node name="wooden_arch" parent="." index="0" unique_id=1553422816]
 surface_material_override/0 = ExtResource("2_idl7w")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="wooden_arch" index="0" unique_id=954970397]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wooden_arch/StaticBody3D" index="0" unique_id=703403049]
+shape = SubResource("ConvexPolygonShape3D_ugaf2")

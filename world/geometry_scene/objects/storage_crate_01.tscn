@@ -1,11 +1,19 @@
 [gd_scene format=3 uid="uid://m12kh473kn33"]
 
-[ext_resource type="PackedScene" uid="uid://ddexi54icf8ub" path="res://environment/geometry_src/objects/storage_crate01.fbx" id="1_66gex"]
-[ext_resource type="Material" uid="uid://dwblipa5mhc8p" path="res://environment/materials/warehouse_red_mat.tres" id="2_c4geg"]
-[ext_resource type="Material" uid="uid://bkd35irg7723h" path="res://environment/materials/warehouse02_red_mat.tres" id="3_c4geg"]
+[ext_resource type="PackedScene" uid="uid://ddexi54icf8ub" path="res://world/geometry_src/objects/storage_crate01.fbx" id="1_66gex"]
+[ext_resource type="Material" uid="uid://dwblipa5mhc8p" path="res://world/materials/warehouse_red_mat.tres" id="2_c4geg"]
+[ext_resource type="Material" uid="uid://bkd35irg7723h" path="res://world/materials/warehouse02_red_mat.tres" id="3_c4geg"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ahujc"]
+points = PackedVector3Array(-1.2880913, -0.017045593, -3.584135, -1.2929004, 0.26310933, -3.5188541, -1.2880913, 2.8082879, -3.584135, -0.70922226, 0.05845519, -3.5855389, 1.2929004, -0.017045593, -3.584135, -1.2880913, -0.017045593, 3.5834332, -1.2929004, 2.5347703, -3.5188541, -1.2929004, 0.26310933, 3.5181522, 1.2929004, 2.8082879, -3.584135, -0.70922226, 2.7159169, -3.5855389, -1.2880913, 2.8082879, 3.5834332, 0.7001101, 0.05845519, -3.5855389, 1.2929004, -0.017045593, 3.5834332, -0.7102347, 0.05845519, 3.5855389, -1.2929004, 2.5347703, 3.5181522, 0.7001101, 2.7159169, -3.5855389, 1.2929004, 2.8082879, 3.5834332, -0.7102347, 2.7159169, 3.5855389, 0.7001101, 0.05845519, 3.5855389, 0.7001101, 2.7159169, 3.5855389)
 
 [node name="storage_crate01" unique_id=1799682046 instance=ExtResource("1_66gex")]
 
-[node name="storage_crate01" parent="." index="0" unique_id=208657226]
+[node name="storage_crate01" parent="." index="0" unique_id=1829032024]
 surface_material_override/0 = ExtResource("2_c4geg")
 surface_material_override/1 = ExtResource("3_c4geg")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="storage_crate01" index="0" unique_id=1944907594]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="storage_crate01/StaticBody3D" index="0" unique_id=1424966660]
+shape = SubResource("ConvexPolygonShape3D_ahujc")

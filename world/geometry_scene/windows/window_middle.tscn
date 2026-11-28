@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://dlh1u4jjga5bx"]
 
-[ext_resource type="PackedScene" uid="uid://5qmssloakc1e" path="res://environment/geometry_src/windows/window_middle.fbx" id="1_x2glq"]
-[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_v6x4b"]
+[ext_resource type="PackedScene" uid="uid://5qmssloakc1e" path="res://world/geometry_src/windows/window_middle.fbx" id="1_x2glq"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://world/materials/warehouse_mat.tres" id="2_v6x4b"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3yujn"]
+points = PackedVector3Array(-0.030950546, -0.030950546, -0.031746034, 4.0309505, 4.0309505, 0.031746034, 4.0309505, 4.0309505, -0.031746034, -0.030950546, 4.0309505, 0.031746034, 4.0309505, -0.030950546, 0.031746034, 4.0309505, -0.030950546, -0.031746034, -0.030950546, 4.0309505, -0.031746034, -0.030950546, -0.030950546, 0.031746034)
 
 [node name="window_middle" unique_id=1935320533 instance=ExtResource("1_x2glq")]
 
-[node name="window_middle" parent="." index="0" unique_id=1000659256]
+[node name="window_middle" parent="." index="0" unique_id=993011343]
 surface_material_override/0 = ExtResource("2_v6x4b")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="window_middle" index="0" unique_id=1403157767]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="window_middle/StaticBody3D" index="0" unique_id=1854551332]
+shape = SubResource("ConvexPolygonShape3D_3yujn")

@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://cwle40gtfe0yn"]
 
-[ext_resource type="PackedScene" uid="uid://csqahv55yp3vf" path="res://environment/geometry_src/door/door_large.fbx" id="1_s42jt"]
-[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_tiywk"]
+[ext_resource type="PackedScene" uid="uid://csqahv55yp3vf" path="res://world/geometry_src/door/door_large.fbx" id="1_s42jt"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://world/materials/warehouse_mat.tres" id="2_tiywk"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cxnea"]
+points = PackedVector3Array(2.8533306, 2.6443644, 0.02499754, 2.8203733, 1.456264, 0.064581186, 2.8491411, 1.5478953, 0.035864383, 2.8533306, 0, 0.02499754, 2.8533306, 2.6443644, -0.024301756, 0, 2.6443644, 0.02499754, 2.8050117, 1.456264, 0.06461914, 2.8488617, 1.3664447, 0.035864383, 2.8533306, 0, -0.024301756, 0, 0, 0.02499754, 2.8491411, 1.5478953, -0.03587703, 2.8203733, 1.456264, -0.06459384, 2.8050117, 1.456264, -0.06461914, 0, 2.6443644, -0.024301756, 2.8488617, 1.3664447, -0.03587703, 0, 0, -0.024301756)
 
 [node name="door_large" unique_id=1772705868 instance=ExtResource("1_s42jt")]
 
-[node name="door_large" parent="." index="0" unique_id=1619384800]
+[node name="door_large" parent="." index="0" unique_id=859983212]
 surface_material_override/0 = ExtResource("2_tiywk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="door_large" index="0" unique_id=1758484388]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="door_large/StaticBody3D" index="0" unique_id=174820204]
+shape = SubResource("ConvexPolygonShape3D_cxnea")

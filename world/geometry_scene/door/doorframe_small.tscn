@@ -1,17 +1,21 @@
 [gd_scene format=3 uid="uid://tawtjjluv5xn"]
 
-[ext_resource type="PackedScene" uid="uid://o14nv3jwpb25" path="res://environment/geometry_src/door/Doorframe_small.fbx" id="1_6ml5x"]
-[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_3dbko"]
-[ext_resource type="PackedScene" uid="uid://bveii638vn43h" path="res://environment/geometry_scene/door/door_small.tscn" id="2_kyw5u"]
-[ext_resource type="PackedScene" uid="uid://baeany6kwd0o6" path="res://environment/geometry_scene/door/door_small_r.tscn" id="4_ikgdi"]
+[ext_resource type="PackedScene" uid="uid://o14nv3jwpb25" path="res://world/geometry_src/door/Doorframe_small.fbx" id="1_6ml5x"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://world/materials/warehouse_mat.tres" id="2_3dbko"]
+[ext_resource type="Script" uid="uid://drnelyeky6sup" path="res://world/geometry_scene/door/doorframe_small.gd" id="2_eaatd"]
+[ext_resource type="PackedScene" uid="uid://bveii638vn43h" path="res://world/geometry_scene/door/door_small.tscn" id="2_kyw5u"]
+[ext_resource type="PackedScene" uid="uid://baeany6kwd0o6" path="res://world/geometry_scene/door/door_small_r.tscn" id="4_ikgdi"]
 
 [node name="Doorframe_small" unique_id=207020057 instance=ExtResource("1_6ml5x")]
+script = ExtResource("2_eaatd")
 
 [node name="Door_small" parent="." index="0" unique_id=1918411833 instance=ExtResource("2_kyw5u")]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.039286852, 1.836476, 0.033290252)
 
-[node name="doorframe_small" parent="." index="1" unique_id=780593323]
+[node name="doorframe_small" parent="." index="1" unique_id=913185048]
 surface_material_override/0 = ExtResource("2_3dbko")
 
 [node name="Door_small_R" parent="." index="2" unique_id=1286851223 instance=ExtResource("4_ikgdi")]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0381365, 1.836476, 0.033290252)

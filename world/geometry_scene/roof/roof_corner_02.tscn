@@ -1,11 +1,19 @@
 [gd_scene format=3 uid="uid://bu7cwq5svsx5o"]
 
-[ext_resource type="PackedScene" uid="uid://cyermjpy8adum" path="res://environment/geometry_src/roof/roof_corner02.fbx" id="1_irxn3"]
-[ext_resource type="Material" uid="uid://wm60k5umfyy5" path="res://environment/materials/roof_mat.tres" id="2_3wk4l"]
-[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="3_f4360"]
+[ext_resource type="PackedScene" uid="uid://cyermjpy8adum" path="res://world/geometry_src/roof/roof_corner02.fbx" id="1_irxn3"]
+[ext_resource type="Material" uid="uid://wm60k5umfyy5" path="res://world/materials/roof_mat.tres" id="2_3wk4l"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://world/materials/warehouse_mat.tres" id="3_f4360"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_q0otr"]
+points = PackedVector3Array(0.015205398, -0.026350379, -0.054514922, 0.03845644, 0.06029415, -0.032387964, 2.1741984, -1.4678011, -8.260086e-05, -0.00022076815, -1.4678011, 2.1743338, -0.07019745, -0.032682657, 0.051915757, -0.04694641, 0.053807378, 0.07426398, 2.1554189, -1.4661022, 2.205754, 2.21377, -1.4650211, 2.1422496, 2.2025917, -1.5147529, 2.1314075, 2.1437933, -1.517533, 2.1944692)
 
 [node name="roof_corner02" unique_id=1253293625 instance=ExtResource("1_irxn3")]
 
-[node name="roof_corner02" parent="." index="0" unique_id=1298731638]
+[node name="roof_corner02" parent="." index="0" unique_id=1020074536]
 surface_material_override/0 = ExtResource("2_3wk4l")
 surface_material_override/1 = ExtResource("3_f4360")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="roof_corner02" index="0" unique_id=1210297670]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="roof_corner02/StaticBody3D" index="0" unique_id=1048091635]
+shape = SubResource("ConvexPolygonShape3D_q0otr")

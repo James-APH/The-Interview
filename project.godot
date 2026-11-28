@@ -28,7 +28,8 @@ folder_colors={
 "res://Rain/": "blue",
 "res://mob/": "red",
 "res://scenes/": "pink",
-"res://scripts/": "teal"
+"res://scripts/": "teal",
+"res://world/": "yellow"
 }
 
 [global_group]

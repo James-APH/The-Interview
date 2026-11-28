@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://dnxbridhotcdm"]
 
-[ext_resource type="PackedScene" uid="uid://c18dqwbkbklos" path="res://environment/geometry_src/objects/Concrete_block_Corner.fbx" id="1_jarwu"]
-[ext_resource type="Material" uid="uid://bi3r5fahelmt2" path="res://environment/materials/Concrete_Tilable_Axis.tres" id="2_ec35e"]
+[ext_resource type="PackedScene" uid="uid://c18dqwbkbklos" path="res://world/geometry_src/objects/Concrete_block_Corner.fbx" id="1_jarwu"]
+[ext_resource type="Material" uid="uid://bi3r5fahelmt2" path="res://world/materials/Concrete_Tilable_Axis.tres" id="2_ec35e"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_uop3s"]
+points = PackedVector3Array(0, 0.7937549, 0.9999022, 0, -3.1664968e-10, 0.9999022, 0, 0.87265074, 0.9842405, -0.6794244, 0.87265074, 0.9629993, -0.6853955, 0.7937549, 0.9731794, -0.6733555, -3.1664968e-10, 0.9749414, 0, -3.1664968e-10, -8.583069e-08, 0, 0.9396045, 0.93960464, -0.66229445, 0.9396045, 0.9342209, -0.78240013, 0.87265074, 0.942737, -0.79052466, 0.7937549, 0.95281917, -0.7831832, -3.1664968e-10, 0.9569304, -1, -3.1664968e-10, -8.583069e-08, -9.787083e-05, 0.91562253, -8.583069e-08, -9.787083e-05, 0.9752349, 0.028093105, 0, 1, 0.79375494, 0, 0.9842404, 0.8726508, -0.6364526, 0.9842404, 0.89095545, -0.75929916, 0.9396045, 0.9137628, -0.8698121, 0.87265074, 0.89428353, -0.87960064, 0.7937549, 0.9040721, -0.87960064, -3.1664968e-10, 0.9040721, -1, 0.7937549, -8.583069e-08, -0.96221614, -3.1664968e-10, 0.70360225, -0.018696189, 0.9752349, -8.583069e-08, -9.787083e-05, 1, 0.09406805, -0.60473764, 1, 0.83858657, -0.72464764, 0.9842404, 0.8703994, -0.84191465, 0.9396045, 0.8663861, -0.89565384, 0.9396045, 0.78944796, -0.92501956, 0.87265074, 0.81294054, -0.93529755, 0.7937549, 0.82116294, -0.94077915, -3.1664968e-10, 0.81558347, -0.9587901, 0.7937549, 0.7144675, -0.94841427, 0.87265074, 0.70839864, -0.9843383, 0.87265074, -8.583069e-08, -0.08437747, 1, -8.583069e-08, -0.68333983, 1, 0.81852, -0.80021536, 0.9842404, 0.8246868, -0.8516053, 0.9842404, 0.75430703, -0.8745106, 0.9842404, 0.66464376, -0.9188528, 0.9396045, 0.690975, -0.93970245, 0.9396045, -8.583069e-08, -0.7938528, 1, -8.583069e-08, -0.7509788, 1, 0.77545035, -0.7993344, 1, 0.7127056, -0.8216523, 1, 0.63322246, -0.8727486, 0.9842404, -8.583069e-08)
 
 [node name="Concrete_block_Corner" unique_id=1593009338 instance=ExtResource("1_jarwu")]
 
-[node name="Concrete_block_Corner" parent="." index="0" unique_id=1073502795]
+[node name="Concrete_block_Corner" parent="." index="0" unique_id=1626008981]
 surface_material_override/0 = ExtResource("2_ec35e")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Concrete_block_Corner" index="0" unique_id=1219608515]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Concrete_block_Corner/StaticBody3D" index="0" unique_id=1954540575]
+shape = SubResource("ConvexPolygonShape3D_uop3s")
