@@ -73,6 +73,8 @@
 [ext_resource type="PackedScene" uid="uid://8vxvx48ceuwk" path="res://world/geometry_scene/dock_props/Boat_Crane/boat_crane_main.tscn" id="71_vg7cy"]
 [ext_resource type="PackedScene" uid="uid://18xuvqegxwgg" path="res://world/geometry_scene/dock/dock_lower_01.tscn" id="72_7kwc2"]
 [ext_resource type="PackedScene" uid="uid://bph57v8i0rn3n" path="res://world/geometry_scene/dock/dock_lower_04.tscn" id="73_ok71q"]
+[ext_resource type="PackedScene" uid="uid://b6gcdw8ksghpq" path="res://scenes/item_use_area.tscn" id="74_lnsl1"]
+[ext_resource type="PackedScene" uid="uid://dog7ihhadnpxg" path="res://scenes/item_1.tscn" id="75_1u5dl"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_sf4n2"]
 _surfaces = [{
@@ -2859,3 +2861,9 @@ environment = SubResource("Environment_bkp3o")
 
 [node name="Player" parent="." unique_id=1650951866 instance=ExtResource("2_wpdqg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7)
+
+[node name="Item_Use_area" parent="." unique_id=1001200757 instance=ExtResource("74_lnsl1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.740263, 1.756614, 25.397055)
+
+[node name="item1" parent="." unique_id=1800446058 instance=ExtResource("75_1u5dl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.888222, 9.536743e-07, 5.5120125)

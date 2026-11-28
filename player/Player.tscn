@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://3e0tcmygfx3u" path="res://player/rifle/rifle.tscn" id="2_83hs8"]
 [ext_resource type="Shader" uid="uid://c26ksspguy2ch" path="res://player/overlay.gdshader" id="3_83hs8"]
 [ext_resource type="Texture2D" uid="uid://fi027yxvk83m" path="res://player/rifle/reticle.png" id="3_wnvi2"]
+[ext_resource type="PackedScene" uid="uid://luda0s6td22d" path="res://assets/items/rusty_jerry_can.glb" id="5_x8kxw"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lqyn0"]
 radius = 0.4981079
@@ -52,6 +53,11 @@ visible = false
 cast_shadow = 0
 extra_cull_margin = 500.0
 mesh = SubResource("QuadMesh_mf1r7")
+
+[node name="HeldItems" type="Node3D" parent="Camera3D" unique_id=1337392994]
+
+[node name="gas" parent="Camera3D/HeldItems" unique_id=1508877666 instance=ExtResource("5_x8kxw")]
+transform = Transform3D(-8.424325e-11, -2.3362725e-11, 0.002, -0.00053447677, 0.001927261, 1.6716323e-18, -0.001927261, -0.00053447677, -8.742278e-11, 0.16845644, -0.5287831, -0.49298397)
 
 [node name="Reticle" type="TextureRect" parent="." unique_id=354091030]
 anchors_preset = 8

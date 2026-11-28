@@ -44,7 +44,7 @@ func interaction(player) -> void:
 	var item = _next_usable_item(player)
 	if item == "":
 		return
-	player.inventory.erase(item)
+	player.remove_item(item)
 	used_items.append(item)
 	used_item.emit(item)
 	if used_items.size() == required_items.size():

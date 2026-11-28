@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dog7ihhadnpxg"]
 
 [ext_resource type="Script" uid="uid://tlem3hirxht1" path="res://scripts/item_1.gd" id="1_pag02"]
-[ext_resource type="Texture2D" uid="uid://lbn2pp7bxqid" path="res://icon.svg" id="2_gw56t"]
+[ext_resource type="PackedScene" uid="uid://luda0s6td22d" path="res://assets/items/rusty_jerry_can.glb" id="2_pag02"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_lqyn0"]
 radius = 0.8086232
@@ -9,14 +9,13 @@ radius = 0.8086232
 [node name="item1" type="Node3D" unique_id=1800446058]
 script = ExtResource("1_pag02")
 
-[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1532649402]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
-texture = ExtResource("2_gw56t")
+[node name="Sketchfab_Scene" parent="." unique_id=1508877666 instance=ExtResource("2_pag02")]
+transform = Transform3D(0.002, 0, 0, 0, 0.002, 0, 0, 0, 0.002, 0, 0, 0)
 
 [node name="Area3D" type="Area3D" parent="." unique_id=810649336]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=376810534]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.69103837, 0)
 shape = SubResource("SphereShape3D_lqyn0")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

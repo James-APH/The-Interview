@@ -33,7 +33,7 @@ var target = null
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	$Label.hide()
-
+	_update_held_item()
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion:
@@ -142,6 +142,7 @@ func _apply_friction(delta: float) -> void:
 
 var inventory: Array[String] = []
 @onready var ray: RayCast3D = %RayCast3D
+@onready var held_items: Node3D = $Camera3D/HeldItems
 const HOLD_TIME = 5.0
 var hold_progress = 0.0
 var hold_target = null
@@ -197,7 +198,26 @@ func _handle_interact(delta: float) -> void:
 func hide_label():
 	$Label.hide()
 
+func _update_held_item():
+	var current = ""
+	if not inventory.is_empty():
+		current = inventory.back()
+	for model in held_items.get_children():
+		if model.name == current:
+			model.visible = true
+		else:
+			model.visible = false
+	if current == "":
+		$Camera3D/rifle.visible = true
+	else:
+		$Camera3D/rifle.visible = false
+
+
+func remove_item(item_name: String):
+	inventory.erase(item_name)
+	_update_held_item()
 
 func pick_up_item(item_name: String):
 	inventory.append(item_name)
+	_update_held_item()
 	print("Inventory: ", inventory)
