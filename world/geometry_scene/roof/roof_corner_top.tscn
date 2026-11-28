@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b0t7ffd5lyiyc"]
+
+[ext_resource type="PackedScene" uid="uid://umxu0vtcbagv" path="res://environment/geometry_src/roof/roof_corner_top.fbx" id="1_ox7ql"]
+[ext_resource type="Material" uid="uid://wm60k5umfyy5" path="res://environment/materials/roof_mat.tres" id="2_6cyfw"]
+
+[node name="roof_corner_top" unique_id=1459611765 instance=ExtResource("1_ox7ql")]
+
+[node name="roof_corner_top" parent="." index="0" unique_id=948467088]
+surface_material_override/0 = ExtResource("2_6cyfw")

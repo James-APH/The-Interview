@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c48dgugy4ira"]
+
+[ext_resource type="PackedScene" uid="uid://f3f61pp31yeh" path="res://environment/geometry_src/rocks/rock05.FBX" id="1_gsbt8"]
+[ext_resource type="Shader" uid="uid://dbf7d5mhr3605" path="res://environment/geometry_scene/rocks/rocks_shader.gdshader" id="2_lhg71"]
+[ext_resource type="Texture2D" uid="uid://dqcx500p6k5uq" path="res://environment/textures/rock05/T_vmilfhj_2K_B.PNG" id="3_uu4yl"]
+[ext_resource type="Texture2D" uid="uid://do38wxufeuv0y" path="res://environment/textures/rock05/T_vmilfhj_2K_N.PNG" id="4_dxkpm"]
+[ext_resource type="Texture2D" uid="uid://8b8bjr4mepyp" path="res://environment/textures/rock05/T_vmilfhj_2K_ORM.PNG" id="5_37sf7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nhbbr"]
+render_priority = 0
+shader = ExtResource("2_lhg71")
+shader_parameter/albedo_tint = Color(0.4574719, 0.5312902, 0.58789575, 1)
+shader_parameter/albedo_texture = ExtResource("3_uu4yl")
+shader_parameter/saturation = 0.3550000168625
+shader_parameter/orm_texture = ExtResource("5_37sf7")
+shader_parameter/ao_light_affect = 3.0
+shader_parameter/roughness = 0.606000028785
+shader_parameter/metallic = 1.0
+shader_parameter/normal_texture = ExtResource("4_dxkpm")
+shader_parameter/normal_scale = 1.3000008217500003
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+
+[node name="rock05" unique_id=188667738 instance=ExtResource("1_gsbt8")]
+
+[node name="Massive_Sandstone_Cliff_vmilfhj_Mid" parent="." index="0" unique_id=674733093]
+surface_material_override/0 = SubResource("ShaderMaterial_nhbbr")

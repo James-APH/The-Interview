@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cqne4t6ds7pmr"]
+
+[ext_resource type="PackedScene" uid="uid://cw2emt0o5jhux" path="res://environment/geometry_src/metal_fences/metal_fence_start.fbx" id="1_t18w7"]
+[ext_resource type="Material" uid="uid://b7drixualalnc" path="res://environment/materials/warehouse02_mat_no_parralax.tres" id="2_pl6ov"]
+
+[node name="metal_fence_start" unique_id=801439030 instance=ExtResource("1_t18w7")]
+
+[node name="metal_fence_start" parent="." index="0" unique_id=1600308086]
+surface_material_override/0 = ExtResource("2_pl6ov")

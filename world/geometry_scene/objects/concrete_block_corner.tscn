@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dnxbridhotcdm"]
+
+[ext_resource type="PackedScene" uid="uid://c18dqwbkbklos" path="res://environment/geometry_src/objects/Concrete_block_Corner.fbx" id="1_jarwu"]
+[ext_resource type="Material" uid="uid://bi3r5fahelmt2" path="res://environment/materials/Concrete_Tilable_Axis.tres" id="2_ec35e"]
+
+[node name="Concrete_block_Corner" unique_id=1593009338 instance=ExtResource("1_jarwu")]
+
+[node name="Concrete_block_Corner" parent="." index="0" unique_id=1073502795]
+surface_material_override/0 = ExtResource("2_ec35e")

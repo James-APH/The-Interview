@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://g1x2qxg8thx6"]
+
+[ext_resource type="Shader" uid="uid://didiojlos8jif" path="res://assets/shaders/post_process.gdshader" id="1_twbcn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mf1r7"]
+shader = ExtResource("1_twbcn")
+
+[node name="PostProcessing" type="Control" unique_id=1656165980]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1721539744]
+material = SubResource("ShaderMaterial_mf1r7")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

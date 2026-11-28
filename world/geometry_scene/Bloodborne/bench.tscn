@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b5qcvupcxfrtx"]
+
+[ext_resource type="PackedScene" uid="uid://bt6uosxtorxt5" path="res://environment/geometry_src/BloodBorne_props/Bench.fbx" id="1_bsfcc"]
+[ext_resource type="Material" uid="uid://tw0503hpfx46" path="res://environment/materials/Bloodborne/wood_mat.tres" id="2_1o8b7"]
+[ext_resource type="Material" uid="uid://dsf53lsoch4ie" path="res://environment/materials/Bloodborne/bench01_mat.tres" id="2_lei7p"]
+[ext_resource type="Material" uid="uid://cias58g4v34y4" path="res://environment/materials/Bloodborne/bench02_mat.tres" id="3_1o8b7"]
+
+[node name="Bench" unique_id=233437470 instance=ExtResource("1_bsfcc")]
+
+[node name="Bench" parent="." index="0" unique_id=326712560]
+transform = Transform3D(1.433, 0, 0, 0, 1.146, 0, 0, 0, 1.146, 0, 0, 0)
+surface_material_override/0 = ExtResource("2_1o8b7")
+surface_material_override/1 = ExtResource("2_lei7p")
+surface_material_override/2 = ExtResource("3_1o8b7")

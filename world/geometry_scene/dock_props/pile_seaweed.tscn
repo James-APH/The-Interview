@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://br3wkprxvbs14"]
+
+[ext_resource type="PackedScene" uid="uid://8shjecm3ew5s" path="res://environment/geometry_src/dock_props/Pile_Seaweed.fbx" id="1_timsq"]
+[ext_resource type="Material" uid="uid://bbxyrm8b4ebg" path="res://environment/materials/dock/seaweed.tres" id="2_3hvhn"]
+
+[node name="Pile_Seaweed" unique_id=1742563092 instance=ExtResource("1_timsq")]
+
+[node name="Pile_Seaweed" parent="." index="0" unique_id=1517868503]
+surface_material_override/0 = ExtResource("2_3hvhn")

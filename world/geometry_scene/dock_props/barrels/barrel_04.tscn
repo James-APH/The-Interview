@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b8x3u2lqgiww"]
+
+[ext_resource type="PackedScene" uid="uid://cq11yjb3272uh" path="res://environment/geometry_src/dock_props/barrels/Barrel04.fbx" id="1_keib0"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_qb2ah"]
+
+[node name="Barrel04" unique_id=207207397 instance=ExtResource("1_keib0")]
+
+[node name="Barrel04" parent="." index="0" unique_id=1444745701]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50783074, 0)
+surface_material_override/0 = ExtResource("2_qb2ah")

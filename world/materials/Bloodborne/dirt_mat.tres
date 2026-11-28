@@ -1,0 +1,29 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dvciyiiufttcu"]
+
+[ext_resource type="Shader" uid="uid://dy7h8wfo2s5do" path="res://environment/materials/parralax_triplanar.gdshader" id="1_4ix7p"]
+[ext_resource type="Texture2D" uid="uid://we137ff4ce08" path="res://environment/textures/Bloodborne/Dirt/Mud_basecolor.PNG" id="2_4ix7p"]
+[ext_resource type="Texture2D" uid="uid://7llarwgc4f0r" path="res://environment/textures/Bloodborne/Dirt/Mud_height.PNG" id="3_pb023"]
+[ext_resource type="Texture2D" uid="uid://cgeitmtjpv44y" path="res://environment/textures/concrete/ORM.png" id="4_667l4"]
+[ext_resource type="Texture2D" uid="uid://cinbss8msefrl" path="res://environment/textures/Bloodborne/Dirt/Mud_normal.PNG" id="4_imhwc"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_4ix7p")
+shader_parameter/albedo_tex = ExtResource("2_4ix7p")
+shader_parameter/normal_tex = ExtResource("4_imhwc")
+shader_parameter/orm_tex = ExtResource("4_667l4")
+shader_parameter/height_tex = ExtResource("3_pb023")
+shader_parameter/albedo_tint = Color(1, 1, 1, 1)
+shader_parameter/roughness_mult = 1.0
+shader_parameter/metallic_mult = 1.0
+shader_parameter/ao_strength = 1.0
+shader_parameter/normal_scale = 1.0
+shader_parameter/brightness = 1.0
+shader_parameter/uv_scale = Vector3(0.25, 0.25, 0.25)
+shader_parameter/uv_offset = Vector3(0, 0, 0)
+shader_parameter/triplanar_sharpness = 4.0
+shader_parameter/world_triplanar = false
+shader_parameter/height_scale = 0.0230000010925
+shader_parameter/min_layers = 8
+shader_parameter/max_layers = 32
+shader_parameter/invert_height = true

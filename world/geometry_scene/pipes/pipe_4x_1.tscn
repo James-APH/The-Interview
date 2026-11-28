@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bqcfe3vy1nxjs"]
+
+[ext_resource type="PackedScene" uid="uid://bpkxcug8x21uw" path="res://environment/geometry_src/pipes/pipe_4x1.fbx" id="1_3tttn"]
+[ext_resource type="Material" uid="uid://2mftbm65irbf" path="res://environment/materials/warehouse02_mat.tres" id="2_4l2h5"]
+
+[node name="pipe_4x1" unique_id=1816417801 instance=ExtResource("1_3tttn")]
+
+[node name="pipe_4x1" parent="." index="0" unique_id=1395477983]
+surface_material_override/0 = ExtResource("2_4l2h5")

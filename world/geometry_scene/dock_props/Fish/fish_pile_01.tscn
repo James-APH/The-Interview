@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cfpodag7ecwhj"]
+
+[ext_resource type="PackedScene" uid="uid://ckgb02iy8i2u2" path="res://environment/geometry_src/dock_props/fish/Fish_Pile01.fbx" id="1_8n4pj"]
+[ext_resource type="Material" uid="uid://cjfg3ko4su6ut" path="res://environment/materials/dock/fish_mat.tres" id="2_ty8ux"]
+
+[node name="Fish_Pile01" unique_id=380369336 instance=ExtResource("1_8n4pj")]
+
+[node name="Fish_Pile01" parent="." index="0" unique_id=1742501221]
+surface_material_override/0 = ExtResource("2_ty8ux")

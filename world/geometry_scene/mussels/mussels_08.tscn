@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bqdfxn71nukhb"]
+
+[ext_resource type="PackedScene" uid="uid://b55dvx4dclos0" path="res://environment/geometry_src/mussels/Mussels08.fbx" id="1_mdka0"]
+[ext_resource type="Material" uid="uid://cd0sbj8r15nx" path="res://environment/materials/mussels_mat.tres" id="2_ke77f"]
+
+[node name="Mussels08" unique_id=1603092211 instance=ExtResource("1_mdka0")]
+
+[node name="Mussels08" parent="." index="0" unique_id=1681635625]
+surface_material_override/0 = ExtResource("2_ke77f")

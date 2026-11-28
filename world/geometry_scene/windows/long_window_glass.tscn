@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bhhdgcrtnpayj"]
+
+[ext_resource type="PackedScene" uid="uid://dvqeujfp88tas" path="res://environment/geometry_src/windows/long_window_glass.fbx" id="1_y4lap"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_4bapd"]
+[ext_resource type="Material" uid="uid://46o4yilpk752" path="res://environment/materials/glass_mat.tres" id="3_3xdv5"]
+
+[node name="long_window_glass" unique_id=1221700697 instance=ExtResource("1_y4lap")]
+
+[node name="long_window_glass" parent="." index="0" unique_id=451392703]
+surface_material_override/0 = ExtResource("2_4bapd")
+surface_material_override/1 = ExtResource("3_3xdv5")

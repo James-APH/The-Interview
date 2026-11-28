@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bytr8hvueu3m7"]
+
+[ext_resource type="PackedScene" uid="uid://dt8vl54gmyl6l" path="res://environment/geometry_src/roof/roof2x1_reversed.fbx" id="1_gccfg"]
+[ext_resource type="Material" uid="uid://wm60k5umfyy5" path="res://environment/materials/roof_mat.tres" id="2_tv1vb"]
+
+[node name="roof2x1_reversed" unique_id=168635725 instance=ExtResource("1_gccfg")]
+
+[node name="roof2x1_reversed" parent="." index="0" unique_id=1236227945]
+surface_material_override/0 = ExtResource("2_tv1vb")

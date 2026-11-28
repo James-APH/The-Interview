@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bpukkc52keks"]
+
+[ext_resource type="Shader" uid="uid://c50jdeuaunmi3" path="res://environment/materials/Tilable_Axis.gdshader" id="1_0xajt"]
+[ext_resource type="Texture2D" uid="uid://btpq5g8lgdbav" path="res://environment/textures/warehouse02/col.png" id="2_ynijx"]
+[ext_resource type="Texture2D" uid="uid://dg6y7mu6jd68w" path="res://environment/textures/warehouse02/normal.png" id="3_p7o1p"]
+[ext_resource type="Texture2D" uid="uid://b171h440i1cro" path="res://environment/textures/warehouse02/ORM.png" id="4_hi10c"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_0xajt")
+shader_parameter/albedo_tex = ExtResource("2_ynijx")
+shader_parameter/normal_tex = ExtResource("3_p7o1p")
+shader_parameter/orm_tex = ExtResource("4_hi10c")
+shader_parameter/albedo_tint = Color(1, 1, 1, 1)
+shader_parameter/brightness = 1.0
+shader_parameter/roughness_mult = 1.0
+shader_parameter/metallic_mult = 1.0
+shader_parameter/ao_strength = 1.0
+shader_parameter/normal_scale = 1.0
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
+shader_parameter/auto_scale_x = true

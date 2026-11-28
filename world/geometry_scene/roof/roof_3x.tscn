@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bf6nylmivu6kq"]
+
+[ext_resource type="PackedScene" uid="uid://bq7hg2bt63ijt" path="res://environment/geometry_src/roof/roof3x.fbx" id="1_dr744"]
+[ext_resource type="Material" uid="uid://wm60k5umfyy5" path="res://environment/materials/roof_mat.tres" id="2_tqu1c"]
+
+[node name="roof3x" unique_id=1593386529 instance=ExtResource("1_dr744")]
+
+[node name="roof3x" parent="." index="0" unique_id=1006529234]
+surface_material_override/0 = ExtResource("2_tqu1c")

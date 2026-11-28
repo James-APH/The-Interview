@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dwdore66bwkpp"]
+
+[ext_resource type="PackedScene" uid="uid://bw014e0prpn0d" path="res://environment/geometry_src/dock_props/chests/Chest_closed.fbx" id="1_piav2"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_y4wrq"]
+
+[node name="Chest_closed" unique_id=831528003 instance=ExtResource("1_piav2")]
+
+[node name="Chest_closed" parent="." index="0" unique_id=2131944465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.43961272, 0)
+surface_material_override/0 = ExtResource("2_y4wrq")

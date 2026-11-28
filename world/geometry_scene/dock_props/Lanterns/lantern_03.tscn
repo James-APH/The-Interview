@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b3n1xjad2pspv"]
+
+[ext_resource type="PackedScene" uid="uid://dn5yy8e14ixw7" path="res://environment/geometry_src/dock_props/lanterns/Lantern03.fbx" id="1_f8qea"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_xqn5m"]
+
+[node name="Lantern03" unique_id=2032163149 instance=ExtResource("1_f8qea")]
+
+[node name="Lantern03" parent="." index="0" unique_id=1839583662]
+surface_material_override/0 = ExtResource("2_xqn5m")

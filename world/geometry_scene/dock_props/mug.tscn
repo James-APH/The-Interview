@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dqdymtsujyfp1"]
+
+[ext_resource type="PackedScene" uid="uid://bom4afvaha4o1" path="res://environment/geometry_src/dock_props/Mug.fbx" id="1_b46a1"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_g0dg5"]
+
+[node name="Mug" unique_id=514435136 instance=ExtResource("1_b46a1")]
+
+[node name="Mug" parent="." index="0" unique_id=633237721]
+surface_material_override/0 = ExtResource("2_g0dg5")

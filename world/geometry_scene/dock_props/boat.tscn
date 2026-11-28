@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dokgbxjxt8nue"]
+
+[ext_resource type="PackedScene" uid="uid://dvja76eplo515" path="res://environment/geometry_src/dock_props/Boat.fbx" id="1_6gr02"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_i5qol"]
+
+[node name="Boat" unique_id=363957902 instance=ExtResource("1_6gr02")]
+
+[node name="Boat" parent="." index="0" unique_id=1757414822]
+surface_material_override/0 = ExtResource("2_i5qol")

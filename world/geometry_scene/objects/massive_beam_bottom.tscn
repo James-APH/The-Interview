@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://u7m6sol1dxyg"]
+
+[ext_resource type="PackedScene" uid="uid://dos0f5hb4ha5s" path="res://environment/geometry_src/objects/massive_beam_bottom.fbx" id="1_6g1el"]
+[ext_resource type="Material" uid="uid://b7drixualalnc" path="res://environment/materials/warehouse02_mat_no_parralax.tres" id="2_o342t"]
+
+[node name="massive_beam_bottom" unique_id=1247724895 instance=ExtResource("1_6g1el")]
+
+[node name="massive_beam_bottom" parent="." index="0" unique_id=743887412]
+surface_material_override/0 = ExtResource("2_o342t")

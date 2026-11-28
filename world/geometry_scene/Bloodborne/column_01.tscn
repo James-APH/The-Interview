@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://be0agic801vyu"]
+
+[ext_resource type="PackedScene" uid="uid://jjjbrcd7ot8x" path="res://environment/geometry_src/BloodBorne_props/Column01.fbx" id="1_l7qvr"]
+[ext_resource type="Material" uid="uid://c8tiscuwdmcyb" path="res://environment/materials/Bloodborne/Ornate_stone_mat.tres" id="2_f4hwl"]
+[ext_resource type="Material" uid="uid://b07ah7igx2mbi" path="res://environment/materials/bricks_smaller_mat.tres" id="3_5b4ul"]
+[ext_resource type="Material" uid="uid://cgyxiwtexiao2" path="res://environment/materials/Bloodborne/basic_stone_mat.tres" id="4_eottr"]
+
+[node name="Column01" unique_id=666854239 instance=ExtResource("1_l7qvr")]
+
+[node name="Column01" parent="." index="0" unique_id=118517783]
+surface_material_override/0 = ExtResource("2_f4hwl")
+surface_material_override/1 = ExtResource("3_5b4ul")
+surface_material_override/2 = ExtResource("4_eottr")

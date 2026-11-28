@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cauuqig0onjj7"]
+
+[ext_resource type="PackedScene" uid="uid://dfxcd0molofat" path="res://environment/geometry_src/objects/Concrete_block.fbx" id="1_0wifi"]
+[ext_resource type="Material" uid="uid://da2g2uyfi0y18" path="res://environment/materials/Warehouse02_Tilable_Axis.tres" id="2_0wifi"]
+[ext_resource type="Material" uid="uid://bi3r5fahelmt2" path="res://environment/materials/Concrete_Tilable_Axis.tres" id="2_6ohoi"]
+
+[node name="Concrete_block" unique_id=834641616 instance=ExtResource("1_0wifi")]
+
+[node name="Concrete_block" parent="." index="0" unique_id=1440155897]
+material_override = ExtResource("2_6ohoi")
+surface_material_override/0 = ExtResource("2_0wifi")

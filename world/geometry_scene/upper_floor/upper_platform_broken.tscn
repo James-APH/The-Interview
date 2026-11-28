@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c70qni0yalbfq"]
+
+[ext_resource type="PackedScene" uid="uid://dnyq82upsve52" path="res://environment/geometry_src/upper_floor/upper_platform_broken.fbx" id="1_nidwl"]
+[ext_resource type="Material" uid="uid://b7drixualalnc" path="res://environment/materials/warehouse02_mat_no_parralax.tres" id="2_e375l"]
+[ext_resource type="Material" uid="uid://2opqk0c7s01d" path="res://environment/materials/warehouse02_transparent_mat.tres" id="3_p7fck"]
+
+[node name="upper_platform_broken" unique_id=1473340199 instance=ExtResource("1_nidwl")]
+
+[node name="upper_platform_broken" parent="." index="0" unique_id=720044900]
+surface_material_override/0 = ExtResource("2_e375l")
+surface_material_override/1 = ExtResource("3_p7fck")

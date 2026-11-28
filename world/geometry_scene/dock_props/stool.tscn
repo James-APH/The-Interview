@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://8tbjnpupjlm0"]
+
+[ext_resource type="PackedScene" uid="uid://bkj8ocsqf22ws" path="res://environment/geometry_src/dock_props/Stool.fbx" id="1_pp08w"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_rb3ok"]
+
+[node name="Stool" unique_id=1625249153 instance=ExtResource("1_pp08w")]
+
+[node name="Stool" parent="." index="0" unique_id=10022541]
+surface_material_override/0 = ExtResource("2_rb3ok")

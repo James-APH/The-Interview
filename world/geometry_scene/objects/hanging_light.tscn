@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bgp3i78hx53y2"]
+
+[ext_resource type="PackedScene" uid="uid://b1gbadaq45dj8" path="res://environment/geometry_src/objects/hanging_light.fbx" id="1_c84pv"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_6lvxm"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="3_lhtkj"]
+
+[node name="hanging_light" unique_id=491294678 instance=ExtResource("1_c84pv")]
+
+[node name="hanging_light" parent="." index="0" unique_id=1612950951]
+surface_material_override/0 = ExtResource("2_6lvxm")
+surface_material_override/1 = ExtResource("3_lhtkj")

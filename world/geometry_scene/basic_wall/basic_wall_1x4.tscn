@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://mtuohghct01h"]
+
+[ext_resource type="PackedScene" uid="uid://b5ki1tk34y7lk" path="res://environment/geometry_src/basic_wall/Basic_Wall1x4.fbx" id="1_3jnas"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_v86pu"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3jnas"]
+points = PackedVector3Array(-3.0517577e-07, 0, 0, 0.9999997, 0, 0, -3.0517577e-07, 3.9999998, 0, 0.9999997, 3.9999998, 0)
+
+[node name="Basic_Wall1x4" unique_id=1695912111 instance=ExtResource("1_3jnas")]
+
+[node name="Basic_Wall1x4" parent="." index="0" unique_id=502033900]
+surface_material_override/0 = ExtResource("2_v86pu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Basic_Wall1x4" index="0" unique_id=1219068015]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Basic_Wall1x4/StaticBody3D" index="0" unique_id=611574201]
+shape = SubResource("ConvexPolygonShape3D_3jnas")

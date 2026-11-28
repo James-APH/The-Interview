@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://t27fb2m1ymxq"]
+
+[ext_resource type="PackedScene" uid="uid://b6u07iisaccc8" path="res://environment/geometry_src/dock_props/Bucket.fbx" id="1_cullt"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_21hfa"]
+
+[node name="Bucket" unique_id=337675171 instance=ExtResource("1_cullt")]
+
+[node name="Bucket" parent="." index="0" unique_id=1493026553]
+surface_material_override/0 = ExtResource("2_21hfa")

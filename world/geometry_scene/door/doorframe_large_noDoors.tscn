@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ctm6lgpfyne0x"]
+
+[ext_resource type="PackedScene" uid="uid://ca71vf88u4mxh" path="res://environment/geometry_src/door/Doorframe_large.fbx" id="1_8x7ue"]
+[ext_resource type="Material" uid="uid://2mftbm65irbf" path="res://environment/materials/warehouse02_mat.tres" id="2_dgsun"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="3_t58m4"]
+
+[node name="Doorframe_large" unique_id=1458601019 instance=ExtResource("1_8x7ue")]
+
+[node name="Doorframe_large" parent="." index="0" unique_id=803553964]
+surface_material_override/0 = ExtResource("2_dgsun")
+surface_material_override/1 = ExtResource("3_t58m4")

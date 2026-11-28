@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bfarn0yge0w51"]
+
+[ext_resource type="PackedScene" uid="uid://bs72v17nmo3pu" path="res://environment/geometry_src/objects/scaffold.fbx" id="1_ijqsh"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_m5dqr"]
+[ext_resource type="Material" uid="uid://odsmrhjfbmvp" path="res://environment/materials/warehouse_transparent_mat.tres" id="3_i8sfc"]
+
+[node name="scaffold" unique_id=1837897939 instance=ExtResource("1_ijqsh")]
+
+[node name="scaffold" parent="." index="0" unique_id=403155760]
+surface_material_override/0 = ExtResource("2_m5dqr")
+surface_material_override/1 = ExtResource("3_i8sfc")

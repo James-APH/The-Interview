@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://f2g6ao116mlk"]
+
+[ext_resource type="PackedScene" uid="uid://hht6cpesgp6e" path="res://environment/geometry_src/dock_props/Sacks/Sack01.fbx" id="1_ahop2"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_memf6"]
+
+[node name="Sack01" unique_id=332986750 instance=ExtResource("1_ahop2")]
+
+[node name="Sack01" parent="." index="0" unique_id=91348252]
+surface_material_override/0 = ExtResource("2_memf6")

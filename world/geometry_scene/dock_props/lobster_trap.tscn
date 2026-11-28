@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bsblno60dgwrn"]
+
+[ext_resource type="PackedScene" uid="uid://ckh4rhrm7kgq3" path="res://environment/geometry_src/dock_props/LobsterTrap.fbx" id="1_w4k0b"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_govhy"]
+[ext_resource type="Material" uid="uid://uhluwyfe2obi" path="res://environment/materials/dock/fishnet_mat.tres" id="3_db06w"]
+
+[node name="LobsterTrap" unique_id=788098744 instance=ExtResource("1_w4k0b")]
+
+[node name="LobsterTrap" parent="." index="0" unique_id=989981257]
+surface_material_override/0 = ExtResource("2_govhy")
+surface_material_override/1 = ExtResource("3_db06w")

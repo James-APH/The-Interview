@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cwhn81ru32xor"]
+
+[ext_resource type="PackedScene" uid="uid://f8j1x7exa4ew" path="res://environment/geometry_src/dock_props/Bottle02.fbx" id="1_j4tjc"]
+[ext_resource type="Material" uid="uid://46o4yilpk752" path="res://environment/materials/glass_mat.tres" id="2_862g6"]
+
+[node name="Bottle02" unique_id=1096629555 instance=ExtResource("1_j4tjc")]
+
+[node name="Bottle02" parent="." index="0" unique_id=1550278929]
+surface_material_override/0 = ExtResource("2_862g6")

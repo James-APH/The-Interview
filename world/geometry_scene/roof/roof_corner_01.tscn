@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://syadfmbt0sys"]
+
+[ext_resource type="PackedScene" uid="uid://ms13ekpds75r" path="res://environment/geometry_src/roof/roof_corner01.fbx" id="1_inw2o"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_dd0ox"]
+[ext_resource type="Material" uid="uid://wm60k5umfyy5" path="res://environment/materials/roof_mat.tres" id="3_ji5d0"]
+
+[node name="roof_corner01" unique_id=691990501 instance=ExtResource("1_inw2o")]
+
+[node name="roof_corner01" parent="." index="0" unique_id=1813235949]
+surface_material_override/0 = ExtResource("2_dd0ox")
+surface_material_override/1 = ExtResource("3_ji5d0")

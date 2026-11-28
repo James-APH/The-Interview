@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c1x6it2ui4220"]
+
+[ext_resource type="PackedScene" uid="uid://dq3fo18mhi7je" path="res://environment/geometry_src/door/doorframe_small_top.fbx" id="1_pxpb6"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_ah7jo"]
+
+[node name="doorframe_small_top" unique_id=1860881753 instance=ExtResource("1_pxpb6")]
+
+[node name="doorframe_small_top" parent="." index="0" unique_id=299187404]
+surface_material_override/0 = ExtResource("2_ah7jo")

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c2as7owxjd8ht"]
+
+[ext_resource type="PackedScene" uid="uid://c8tmxnw73mh6w" path="res://environment/geometry_src/BloodBorne_props/Lantern_Basic.fbx" id="1_p0f01"]
+[ext_resource type="Material" uid="uid://dggvojcf7ujdc" path="res://environment/materials/Bloodborne/lantern_mat.tres" id="2_cht2l"]
+
+[node name="Lantern_Basic" unique_id=1058539738 instance=ExtResource("1_p0f01")]
+
+[node name="Lantern_Basic" parent="." index="0" unique_id=1234867367]
+surface_material_override/0 = ExtResource("2_cht2l")

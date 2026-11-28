@@ -1,0 +1,15 @@
+[gd_resource type="ORMMaterial3D" format=3 uid="uid://drmadbo2h8dky"]
+
+[ext_resource type="Texture2D" uid="uid://c10jv0hsgyss7" path="res://environment/textures/Bloodborne/Metal Trim/Metal_COL.PNG" id="1_s4gia"]
+[ext_resource type="Texture2D" uid="uid://cd8id3mwv1vur" path="res://environment/textures/dock01/trim_low_lambert1_Emissive.1001.jpg" id="2_6mffx"]
+[ext_resource type="Texture2D" uid="uid://b2jfg4rlq36xj" path="res://environment/textures/Bloodborne/Metal Trim/Metal_NRM.PNG" id="3_6mffx"]
+[ext_resource type="Texture2D" uid="uid://ccqehlkbg5um3" path="res://environment/textures/Bloodborne/Metal Trim/Metal_ORM.PNG" id="4_3oo4p"]
+
+[resource]
+albedo_texture = ExtResource("1_s4gia")
+orm_texture = ExtResource("4_3oo4p")
+emission_energy_multiplier = 5.63
+emission_texture = ExtResource("2_6mffx")
+normal_enabled = true
+normal_texture = ExtResource("3_6mffx")
+uv1_world_triplanar = true

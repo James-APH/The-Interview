@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://h24dyj4ibbgd"]
+
+[ext_resource type="PackedScene" uid="uid://ji6kemya1k4t" path="res://environment/geometry_src/windows/square_window.fbx" id="1_7mqa3"]
+[ext_resource type="Material" uid="uid://dtmr3uwj0f5eo" path="res://environment/materials/warehouse_mat.tres" id="2_wc6i7"]
+
+[node name="square_window" unique_id=658655648 instance=ExtResource("1_7mqa3")]
+
+[node name="square_window" parent="." index="0" unique_id=46928441]
+surface_material_override/0 = ExtResource("2_wc6i7")

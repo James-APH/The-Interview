@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bhkbcf1ex0fvt"]
+
+[ext_resource type="PackedScene" uid="uid://c7ti4mqx4lyu1" path="res://environment/geometry_src/BloodBorne_props/Lamp_Post.fbx" id="1_ybrue"]
+[ext_resource type="Material" uid="uid://3os1v75wes13" path="res://environment/materials/Bloodborne/lampost_mat.tres" id="2_eoifk"]
+
+[node name="Lamp_Post" unique_id=1241211741 instance=ExtResource("1_ybrue")]
+
+[node name="Lamp_Post" parent="." index="0" unique_id=959449961]
+surface_material_override/0 = ExtResource("2_eoifk")

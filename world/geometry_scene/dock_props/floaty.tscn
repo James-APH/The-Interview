@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c3tarmh1bc83p"]
+
+[ext_resource type="PackedScene" uid="uid://bymt4ktv3n120" path="res://environment/geometry_src/dock_props/Floaty.fbx" id="1_fq6gq"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_wdjo2"]
+
+[node name="Floaty" unique_id=730672548 instance=ExtResource("1_fq6gq")]
+
+[node name="Floaty" parent="." index="0" unique_id=482925819]
+surface_material_override/0 = ExtResource("2_wdjo2")

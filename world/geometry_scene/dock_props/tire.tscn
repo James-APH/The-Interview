@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://n76xaxv3n53x"]
+
+[ext_resource type="PackedScene" uid="uid://xpn7m5dnaicr" path="res://environment/geometry_src/dock_props/Tire.fbx" id="1_o4wnr"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_1i0tk"]
+
+[node name="Tire" unique_id=154663956 instance=ExtResource("1_o4wnr")]
+
+[node name="Tire" parent="." index="0" unique_id=1365062725]
+surface_material_override/0 = ExtResource("2_1i0tk")

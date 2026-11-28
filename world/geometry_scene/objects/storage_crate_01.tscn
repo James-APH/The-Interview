@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://m12kh473kn33"]
+
+[ext_resource type="PackedScene" uid="uid://ddexi54icf8ub" path="res://environment/geometry_src/objects/storage_crate01.fbx" id="1_66gex"]
+[ext_resource type="Material" uid="uid://dwblipa5mhc8p" path="res://environment/materials/warehouse_red_mat.tres" id="2_c4geg"]
+[ext_resource type="Material" uid="uid://bkd35irg7723h" path="res://environment/materials/warehouse02_red_mat.tres" id="3_c4geg"]
+
+[node name="storage_crate01" unique_id=1799682046 instance=ExtResource("1_66gex")]
+
+[node name="storage_crate01" parent="." index="0" unique_id=208657226]
+surface_material_override/0 = ExtResource("2_c4geg")
+surface_material_override/1 = ExtResource("3_c4geg")

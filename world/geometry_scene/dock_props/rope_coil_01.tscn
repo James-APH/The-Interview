@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://0ao87kb732pi"]
+
+[ext_resource type="PackedScene" uid="uid://i2owpnkao5ye" path="res://environment/geometry_src/dock_props/Rope_Coil01.fbx" id="1_gsbtv"]
+[ext_resource type="Material" uid="uid://cdvui2io17eku" path="res://environment/materials/dock/dock_mat.tres" id="2_dw5bn"]
+
+[node name="Rope_Coil01" unique_id=1836234069 instance=ExtResource("1_gsbtv")]
+
+[node name="Rope_Coil01" parent="." index="0" unique_id=134311716]
+surface_material_override/0 = ExtResource("2_dw5bn")
